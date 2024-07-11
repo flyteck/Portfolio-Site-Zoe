@@ -1,0 +1,47 @@
+/*
+Colors used:
+Background (Cream): #FFF8F0;
+Primary Text (Dark Brown): #2F2E3C;
+Dark Green: #33484B;
+Light Green: #586960;
+Accent 1 (Lavendar): #B4AEF1;
+Accent 2 (Blue): #87BFF4;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Akshar:wght@300..700&display=swap');
+
+body {
+  font-family: 'Akshar', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.social-link {
+  display: inline-flex;
+  margin: 5px;
+  width: 60px;
+  height: 60px;
+  background: grey;
+  border-radius: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.socials {
+  display: flex;
+}
+
+.logo {
+  max-width: 100%;
+  width:120px;
+  border-radius:4px
+}
+
+.project-container picture {
+  max-width: 600px;
+}
