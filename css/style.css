@@ -2,20 +2,111 @@
 Colors used:
 Background (Cream): #FFF8F0;
 Primary Text (Dark Brown): #2F2E3C;
-Dark Green: #33484B;
-Light Green: #586960;
+Link (Dark Green): #33484B;
+Link Hover/Active/Etc (Light Green): #586960;
 Accent 1 (Lavendar): #B4AEF1;
-Accent 2 (Blue): #87BFF4;
+Accent 2 (Blue): #91c9ff;
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Akshar:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Akshar:wght@300..700&family=Crushed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Kufam:ital,wght@0,400..900;1,400..900&family=Varela+Round&family=Zen+Maru+Gothic&display=swap');
 
 body {
+  background: #FFF8F0;
   font-family: 'Akshar', sans-serif;
+  color: #2F2E3C;
+  margin: 50px auto;
+  padding: 0 10px;
+  max-width: 1200px;
+  font-weight: 350;
+  font-size: 18px;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+h1,h2 {
+  font-family: 'Crushed', sans-serif;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h2, h3, h4 {
+  margin: 10px 0;
+}
+
+h5 {
+  display: inline-block;
+  margin: 0;
+}
+
+a {
+  color: #33484B;
+  transition: 300ms ease;
+}
+
+a:hover, a:focus, a:active {
+  color: #586960
 }
 
 img {
   max-width: 100%;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+/** I usually upload larger images bc I find the quality just... looks worse, but I certainly don't want anything *smaller* than the screen to stretch - 
+ * so I'm using max width and an auto margin to center anything smaller, rather than stretching everything to 100% **/
+
+ul li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+/******************** General ********************/
+
+.button {
+  display: inline-block;
+  font-weight: 400;
+  color: #FFF8F0;
+  text-decoration: none;
+  padding: 8px 10px 6px;
+  margin: 5px 0;
+  background: #33484B;
+  border: 1px solid #586960;
+  border-top: 2px solid #586960;
+  border-bottom: 2px solid #131e20;
+  border-radius: 5px;
+  transition: background 200ms ease, color 200ms ease;
+}
+
+.button:hover, .button:focus, .button:active {
+  background: #23393c;
+  color: #91c9ff;
+  margin: 6px 0 4px;
+  border-color: #586960;
+}
+
+.button.contact {
+  background: none;
+  color: #33484B;
+  border-width: 2px;
+}
+
+.button.contact:hover, .button.contact:focus {
+  background: #586960;
+  color: #FFF8F0;
+  border-color: #33484B;
 }
 
 .social-link {
@@ -42,6 +133,40 @@ img {
   border-radius:4px
 }
 
-.project-container picture {
-  max-width: 600px;
+/******************** Typography for each project, and other project-specific styles ********************/
+
+#aquire .accent {
+  color:  #df4426;
 }
+
+#typography-aquire li {
+  height: 45px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+} 
+
+#typography-aquire h1 {
+  font-family: "Kufam", sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+
+#typography-aquire h2 {
+  font-family: "Jura", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+#typography-aquire h3 {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+#typography-aquire {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 300;
+}
+
+
