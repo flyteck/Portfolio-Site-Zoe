@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">    
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Zoe Amaral">
+    <meta name="description" content="This is the about page of my website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="img/logofav.png" rel="shortcut icon">
+    <title>UI/UX/Web Dev Portfolio - Zoe Amaral</title>
+
+    <!--- I'm seeing a lot of grainy sadness on my images, so they're a liiitttle bigger than 1200px which helps a lot with that. This is here for viewing the live page and not having it be a nightmare. /-->
+    <style>
+      img {
+        max-width: 100%;
+      }
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <div class="nav-area">
+        <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!------------------------------------------- Start of Main /----------------------------------------------->
+
+    <main>
+
+      <picture>
+        <source srcset="img/aquire/title-image-sm.jpg" media="(max-width:767px)">
+        <img src="img/aquire/title-image.jpg" alt="Aquire">
+      </picture>
+
+      <picture>
+        <source srcset="img/aquire/macbook-home-sm.png" media="(max-width:767px)">
+        <img src="img/aquire/macbook-home.png" alt="Aquire">
+      </picture>
+
+      <div>
+        <p><span class="accent">Aquire</span> is a targeted, highly specific storefront designed for aquarium hobbyists. The app’s design is bright and friendly, using bright colours and a white background to make the product photos (in this case, mostly of aquarium livestock) pop. Users will have the ability to sort stock by type, price, colour, water temperature range, and minimum tank size, allowing for users to find what they’re looking for with ease.</p>
+
+        <!--- the accent class I'm putting in so I don't forget; that text should be orange in the finished product. /-->
+
+        <p>Additionally, Aquire will provide direct delivery to homes, as well as to affiliated pet store locations for pick up as an alternative option. Users can also go to these affiliated locations for any returns.</p>
+
+        <p>
+          <h4>Aquire’s basic style guidelines:</h4>
+          <ul>
+            <li><h5>Friendly:</h5> the app needs to feel personable and playful</li>
+            <li><h5>Inviting:</h5> the store should feel welcoming and lively</li>
+            <li><h5>Bubbly:</h5> this ties to the earlier themes, but also, the rounded shape of bubbles, as well as many of the fish being sold (livebearers and goldfish), to create harmony</li>
+            <li><h5>Clean:</h5> the app should feel clean and minimal despite use of bright colours and photos</li>
+          </ul>
+
+          <!--- I'm unsure what best practice is for things like screen readers and seo - should I just bold the text for the subheaders here, or is it better to have them as headers? I would want h4 and h5 visually styled the same in this case but they do serve different functions still, so I made them different. /-->
+        </p>
+      </div>
+
+      <hr>
+
+      <div>
+        <h3>Ideation & Approach</h3>
+
+        <p>I chose to approach Aquire from a visual-design first direction, placing strong emphasis on the colours. A storefront should be clean, simple, and easy to use - but that doesn’t mean it shouldn’t stand out. I spent a lot of time with the colours to ensure that they do some heavy lifting when it comes to making the user experience pleasant.</p>
+
+        <p>Orange as a key colour not only draws the eye well, but will always contrast nicely with the green and blue backgrounds of most livestock photos.</p>
+
+        <h4>Colours</h4>
+
+        <picture>
+          <source srcset="img/aquire/colours-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/colours.png" alt="aquire colour palette (#DF4426, #F36022, #178EFC, #1B603E, #B1B1B1, #0A2936, #FFFFF">
+        </picture>
+
+        <p>Additionally, I chose typograhpy that I felt would compliment the large photos and friendly personality of the app, while remaining clean and easily readable.</p>
+
+        <h4>Typography</h4>
+
+        <ul class="typography">
+          <li><h1>Title (Kufam, Bold)</h1></li>
+          <li><h2>Header Font <strong>Bold</strong> (Jura)</h2></li>
+          <li><h3>Subtitle Font (Varela Round)</h3></li>
+          <li><strong>Body font medium lorem ipsum (Zen Maru Gothic)</strong></li>
+          <li>Body font lorem ipsum (Zen Maru Gothic)</li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <picture>
+        <source srcset="img/aquire/mockupPhoneSm.jpg" media="(max-width:767px)">
+        <img src="img/aquire/mockupPhoneLG.jpg" alt="aquire smartphone mockup">
+      </picture>
+
+      <hr>
+
+      <div>
+        <h3>Wireframes</h3>
+
+        <p>Creating wireframes for this app was relatively simple, as the final app was always intended to use high contrast blocks of colour and white to create an appealing, clean design.</p>
+
+        <picture>
+          <source srcset="img/aquire/wireframes-low-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/wireframes-low.png" alt="desktop wireframes - low fidelity">
+        </picture>
+
+        <picture>
+          <source srcset="img/aquire/wireframes-mid-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/wireframes-mid.png" alt="desktop wireframes - mid fidelity">
+        </picture>
+      </div>
+
+      <hr>
+
+      <picture>
+        <source srcset="img/aquire/mockupTabletSm.jpg" media="(max-width:767px)">
+        <img src="img/aquire/mockupTabletLg.jpg" alt="aquire tablet mockup">
+      </picture>
+
+      <hr>
+
+      <div>
+        <h3>High Fidelity</h3>
+        <p>I was happy with my first set of high fidelity wireframes; however, after some feedback and critique, I felt that the header was a bit cluttered and unbalanced.</p>
+
+        <picture>
+          <source srcset="img/aquire/high-fid-1-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/high-fid-1.png" alt="aquire tablet mockup">
+        </picture>
+
+        <picture>
+          <source srcset="img/aquire/high-fid-2-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/high-fid-2.png" alt="aquire tablet mockup">
+        </picture>
+
+        <picture>
+          <source srcset="img/aquire/high-fid-3-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/high-fid-3.png" alt="aquire tablet mockup">
+        </picture>
+
+        <p>I feel the narrower header with the counterbalanced menu options/search bar feels much more level, and less intrusive, while still adding colour and character to each page.</p>
+
+        <picture>
+          <source srcset="img/aquire/high-fid-header-1-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/high-fid-header-1.png" alt="aquire tablet mockup">
+        </picture>
+
+        <picture>
+          <source srcset="img/aquire/high-fid-header-2-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/high-fid-header-2.png" alt="aquire tablet mockup">
+        </picture>
+
+        <picture>
+          <source srcset="img/aquire/high-fid-header-3-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/high-fid-header-3.png" alt="aquire tablet mockup">
+        </picture>
+      </div>
+
+      <hr>
+
+      <picture>
+        <source srcset="img/aquire/mockupDesktopSm.jpg" media="(max-width:767px)">
+        <img src="img/aquire/mockupDesktopLg.jpg" alt="aquire tablet mockup">
+      </picture>
+
+      <hr>
+
+      <div>
+        <h3>Structure, Components, and Prototypes</h3>
+
+        <p>While working on this app, I put in special effort to keep things organized and clear, for ease of editing and responsive design. All screens are built using a column system and auto layouts, and I began building components early. Here’s some of the components and their various states, for the functional prototype of the app. I felt that it was important to prototype these animations, as they’re important to the feel and functionality of the app.</p>
+
+        <picture>
+          <source srcset="img/aquire/components-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/components.png" alt="aquire tablet mockup">
+        </picture>
+
+        <p>Add to cart button, Desktop + Mobile versions of the product listing, and the different settings for a product filter button.</p>
+
+        <a href="https://www.figma.com/proto/wC4cv1RbvxDBDypbie9FeJ/Aquire-V2?node-id=1-2&t=ZeW1sPQwA9lxypX0-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1" target="_blank">View the Figma protoype here!</a>
+      </div>
+
+      <hr>
+
+      <div>
+        <h3>Final High Fidelity Screens</h3>
+
+        <!-- In my portfolio, these are stacked and scaled. I will either style them the same here, or make a carousel for each device./-->
+
+        <h4>Mobile</h4>
+        
+        <picture>
+          <source srcset="img/aquire/mobile-1-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/mobile-1.png" alt="aquire tablet mockup">
+        </picture>
+
+        <picture>
+          <source srcset="img/aquire/mobile-2-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/mobile-2.png" alt="aquire tablet mockup">
+        </picture>
+
+        <picture>
+          <source srcset="img/aquire/mobile-3-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/mobile-3.png" alt="aquire tablet mockup">
+        </picture>
+
+        <picture>
+          <source srcset="img/aquire/mobile-4-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/mobile-4.png" alt="aquire tablet mockup">
+        </picture>
+
+        <picture>
+          <source srcset="img/aquire/mobile-5-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/mobile-5.png" alt="aquire tablet mockup">
+        </picture>
+
+        <h4>Tablet</h4>
+
+        <picture>
+          <source srcset="img/aquire/tablet-1-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/tablet-1.png" alt="aquire tablet mockup">
+        </picture>
+
+        <picture>
+          <source srcset="img/aquire/tablet-2-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/tablet-2.png" alt="aquire tablet mockup">
+        </picture>
+
+        <picture>
+          <source srcset="img/aquire/tablet-3-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/tablet-3.png" alt="aquire tablet mockup">
+        </picture>
+
+        <picture>
+          <source srcset="img/aquire/tablet-4-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/tablet-4.png" alt="aquire tablet mockup">
+        </picture>
+
+        <picture>
+          <source srcset="img/aquire/tablet-5-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/tablet-5.png" alt="aquire tablet mockup">
+        </picture>
+
+        <h4>Desktop</h4>
+
+        <picture>
+          <source srcset="img/aquire/desktop-1-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/desktop-1.png" alt="aquire tablet mockup">
+        </picture>
+
+        <picture>
+          <source srcset="img/aquire/desktop-2-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/desktop-2.png" alt="aquire tablet mockup">
+        </picture>
+
+        <picture>
+          <source srcset="img/aquire/desktop-3-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/desktop-3.png" alt="aquire tablet mockup">
+        </picture>
+
+        <picture>
+          <source srcset="img/aquire/desktop-4-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/desktop-4.png" alt="aquire tablet mockup">
+        </picture>
+
+        <picture>
+          <source srcset="img/aquire/desktop-5-sm.png" media="(max-width:767px)">
+          <img src="img/aquire/desktop-5.png" alt="aquire tablet mockup">
+        </picture>
+      </div>
+
+    </main>
+
+    <!------------------------------------------- End of Main /----------------------------------------------->
+
+    <footer id="contact">
+      <h2>Get In Touch</h2>
+      <p class="content"><a href="tel:+6476292113">647-629-2113</a></p>
+      <a href="mailto:naturegirl14@rogers.com">Send Email</a>
+      <ul class="socials">
+        <li><a href="https://www.deviantart.com/flyteck" class="social-link deviantart"><i class="fa-brands fa-deviantart"></i></a></li>
+        <li><a href="https://www.behance.net/zoeamaral" class="social-link behance"><i class="fa-brands fa-behance"></i></a></li>
+        <li><a href="linkedin" class="social-link linkeden"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="twitter" class="social-link twitter"><i class="fa-brands fa-twitter"></i></a></li>
+      </ul>
+      <p class="copyright">
+        Copyright Zoe Amaral 2024
+      </p>
+    </footer>
+  </body>
+</html>
