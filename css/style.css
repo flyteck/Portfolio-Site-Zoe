@@ -11,6 +11,10 @@ Accent 2 (Blue): #91c9ff;
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Akshar:wght@300..700&family=Crushed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Kufam:ital,wght@0,400..900;1,400..900&family=Varela+Round&family=Zen+Maru+Gothic&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #FFF8F0;
   font-family: 'Akshar', sans-serif;
