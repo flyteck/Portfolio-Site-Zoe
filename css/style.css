@@ -15,11 +15,28 @@ body {
   background: #FFF8F0;
   font-family: 'Akshar', sans-serif;
   color: #2F2E3C;
-  margin: 50px auto;
-  padding: 0 10px;
-  max-width: 1200px;
   font-weight: 350;
   font-size: 18px;
+}
+
+main {
+  padding-top: 175px;
+}
+
+main#work {
+  padding-top: 0;
+}
+
+#work #hero {
+  padding-top: 205px;
+}
+
+/** did this as a fix for the cream BG showing if you over scroll past the hero on the work page **/
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #33484B;
 }
 
 b, strong {
@@ -65,12 +82,110 @@ img {
 /** I usually upload larger images bc I find the quality just... looks worse, but I certainly don't want anything *smaller* than the screen to stretch - 
  * so I'm using max width and an auto margin to center anything smaller, rather than stretching everything to 100% **/
 
-ul li {
-  list-style: none;
+header ul, footer ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 10px 0;
 }
 
-ul {
-  padding: 0;
+/******************** Layout Styling ********************/
+
+.container {
+  padding: 0 15px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.subtitle {
+  font-size: 90%;
+  opacity: 0.8;
+}
+
+/** I know it says to use a container for each section, so I have - why 
+ * is this better than wrapping the whole main content in one container though? It seems like extra divs for no reason **/
+
+#hero {
+  padding: 30px 20px;
+  background: #586960;
+  color: white;
+}
+
+#hero h1 {
+  margin: 0;
+}
+
+#hero p {
+  margin: 10px 0;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+.icon-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF8F0;
+  font-size: 1.6em;
+  text-align: left;
+}
+
+.icon-row img {
+  margin-right: 20px;
+}
+
+.project-container {
+  border-bottom: 1px dashed #33484B;
+  padding-bottom: 10px;
+}
+
+.project-container:last-child {
+  border-bottom: none;
+}
+
+/** this removes the bottom border from the last project, so it doesn't look weird with the footer's top border 
+ * Also, are dashed borders tacky? I think they have a fun vibe but I know it's not really proffessional. Not sure if a solid border or a gradiated
+ * div divider would be more appropriate. **/
+
+p.project-description {
+  margin: 10px 0;
+}
+
+#navigation {
+  background: #33484B;
+  padding: 20px;
+  margin: 0;
+  position: fixed;
+  box-shadow: 0 2px 5px #131e20;
+  width: calc(100% - 40px);
+  top: 0;
+  text-align: center;
+}
+
+#navigation a:hover,  #navigation a:focus, #navigation a:active {
+  color: #B4AEF1;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  margin-bottom: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Crushed', sans-serif;
+  font-size: 1.8em;
 }
 
 /******************** General ********************/
@@ -92,7 +207,7 @@ ul {
 
 .button:hover, .button:focus, .button:active {
   background: #23393c;
-  color: #91c9ff;
+  color: #B4AEF1;
   margin: 6px 0 4px;
   border-color: #586960;
 }
@@ -112,24 +227,33 @@ ul {
 .social-link {
   display: inline-flex;
   margin: 5px;
-  width: 60px;
-  height: 60px;
-  background: grey;
+  width: 55px;
+  height: 55px;
+  background: #586960;
   border-radius: 100%;
   overflow: hidden;
   justify-content: center;
   align-items: center;
   font-size: 2em;
   text-decoration: none;
+  color: #fff8f0;
+  font-size: 1.5em;
+  transition: 300ms ease;
+}
+
+.social-link:hover, .social-link:focus {
+  background: #33484b;
+  color: #B4AEF1;
 }
 
 .socials {
   display: flex;
+  justify-content: center;
 }
 
 .logo {
   max-width: 100%;
-  width:120px;
+  width:80px;
   border-radius:4px
 }
 
@@ -140,7 +264,7 @@ ul {
 }
 
 #typography-aquire li {
-  height: 45px;
+  line-height: 40px;
   margin: 0;
   display: flex;
   align-items: center;
