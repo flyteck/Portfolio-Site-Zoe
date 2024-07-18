@@ -25,6 +25,7 @@ body {
 
 main {
   padding-top: 175px;
+  overflow: hidden;
 }
 
 main#work {
@@ -94,6 +95,10 @@ img {
 ul {
   padding: 0 15px;
   margin: 0;
+}
+
+hr {
+  margin: 20px 0;
 }
 
 header ul, footer ul {
@@ -313,6 +318,32 @@ nav > ul > li > a {
 #typography-aquire {
   font-family: "Zen Maru Gothic", serif;
   font-weight: 300;
+}
+
+/*********************** General Project Page **********************/
+
+[class*="mockup-wrapper"] {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+[class*="mockup-wrapper"] picture {
+  display: block;
+  margin-right: -15%;
+  margin-bottom: -18%;
+}
+
+.mockup-wrapper-tablet picture {
+  margin-right: -10%;
+}
+
+.mockup-wrapper-tablet img {
+  max-width: 600px;
+}
+
+.mockup-wrapper-desktop picture {
+  margin-bottom: -40%;
 }
 
 /*********************** SVG Animation **********************/
