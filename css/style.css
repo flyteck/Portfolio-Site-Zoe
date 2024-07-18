@@ -31,6 +31,11 @@ main#work {
   padding-top: 0;
 }
 
+#hero div {
+  max-width: 600px;
+  margin: auto;
+}
+
 #work #hero {
   padding-top: 205px;
 }
@@ -85,6 +90,11 @@ img {
 
 /** I usually upload larger images bc I find the quality just... looks worse, but I certainly don't want anything *smaller* than the screen to stretch - 
  * so I'm using max width and an auto margin to center anything smaller, rather than stretching everything to 100% **/
+
+ul {
+  padding: 0 15px;
+  margin: 0;
+}
 
 header ul, footer ul {
   padding: 0;
@@ -141,7 +151,8 @@ header ul, footer ul {
 
 .project-container {
   border-bottom: 1px dashed #33484B;
-  padding-bottom: 10px;
+  margin: 0;
+  padding: 25px 0;
 }
 
 .project-container:last-child {
@@ -162,7 +173,7 @@ p.project-description {
   margin: 0;
   position: fixed;
   box-shadow: 0 2px 5px #131e20;
-  width: calc(100% - 40px);
+  width: 100%;
   top: 0;
   text-align: center;
 }
@@ -185,11 +196,18 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0 10px;
   color: white;
   text-decoration: none;
   font-family: 'Crushed', sans-serif;
   font-size: 1.8em;
+}
+
+.about picture {
+  display: block;
+  max-height: 1000px;
+  overflow: hidden;
+  border-radius: 6px;
 }
 
 /******************** General ********************/
@@ -295,6 +313,138 @@ nav > ul > li > a {
 #typography-aquire {
   font-family: "Zen Maru Gothic", serif;
   font-weight: 300;
+}
+
+/*********************** SVG Animation **********************/
+
+.sun {
+  animation: 10s color-change infinite alternate linear;
+}
+
+.sun-outline {
+  animation: 10s rotate infinite alternate linear;
+  transform-origin: center;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(359deg);}
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,70px);}
+  to {transform: translate(200px,70px);}
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(500px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+/********************************************* Media Queries ********************************************/
+
+/* Medium devices (640px and larger) */
+@media only screen and (min-width: 640px) {
+
+  h2 {
+    margin: 30px 0 10px;
+  }
+
+  #navigation {
+    text-align: unset;
+  }
+
+  #hero p {
+    line-height: 1.6;
+  }
+
+  .icon-row {
+    display: inline-flex;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  #work #hero {
+    padding-top: 160px;
+    text-align: center;
+  }
+
+  main {
+    padding-top: 130px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .skills-and-tools .col-md-6 {
+    margin: 20px 0;
+  }
+
+  [class*="col-md"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .project-container {
+    padding: 40px 0;
+  }
+
+  div.project-container:first-of-type {
+    padding-top: 20px;
+  }
+
+}
+
+/*Large devices (1024px or larger)*/
+@media only screen and (min-width: 1024px) {
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  [class*="col-lg"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .skills-and-tools .col-md-6 {
+    float: none;
+    width: 100%;
+  }
+
+
+}
+
+/* X-large devices (1440px or larger)*/
+@media only screen and (min-width: 1440px) {
+
 }
 
 
