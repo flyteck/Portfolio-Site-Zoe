@@ -358,11 +358,6 @@ nav > ul > li > a {
   animation: 10s color-change infinite alternate linear;
 }
 
-.sun-outline {
-  animation: 10s rotate infinite alternate linear;
-  transform-origin: center;
-}
-
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
@@ -374,11 +369,6 @@ nav > ul > li > a {
 @keyframes color-change {
   from {fill: #edc655;}
   to {fill: #f76414;}
-}
-
-@keyframes rotate {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(359deg);}
 }
 
 @keyframes cloud-move {
