@@ -18,20 +18,23 @@
   <body>
     <header>
       <div id="navigation">
-        <div class="icon-row">
-          <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
-          <div>
-            <div><a href="index.html">Zoe Amaral</a></div>
-            <div class="subtitle">UI/UX/FED</div>
+        <div class="navtoggle" id="myNavtoggle">
+          <div class="icon-row">
+            <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+            <div>
+              <div><a href="index.html">Zoe Amaral</a></div>
+              <div class="subtitle">UI/UX/FED</div>
+            </div>
           </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
 
@@ -724,6 +727,7 @@
       </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

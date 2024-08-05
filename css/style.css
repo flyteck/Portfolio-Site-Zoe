@@ -25,7 +25,7 @@ body {
 }
 
 main {
-  padding-top: 175px;
+  padding-top: 115px;
   overflow: hidden;
 }
 
@@ -39,7 +39,7 @@ main#work {
 }
 
 #work #hero {
-  padding-top: 205px;
+  padding-top: 145px;
 }
 
 /** did this as a fix for the cream BG showing if you over scroll past the hero on the work page **/
@@ -145,7 +145,7 @@ header ul, footer ul {
 .icon-row {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   color: #FFF8F0;
   font-size: 1.6em;
   text-align: left;
@@ -193,17 +193,31 @@ p.project-description {
   color: #B4AEF1;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
-
 nav > ul {
   margin-bottom: 0;
 }
 
+nav > ul {
+  margin: 0;
+}
+
 nav > ul > li {
-  display: inline-block;
+  text-align: left;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 35px;
 }
 
 nav > ul > li > a {
@@ -212,6 +226,24 @@ nav > ul > li > a {
   text-decoration: none;
   font-family: 'Crushed', sans-serif;
   font-size: 1.8em;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #586960;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 .about picture {
@@ -400,6 +432,7 @@ nav > ul > li > a {
 
   .icon-row {
     display: inline-flex;
+    justify-content: center;
   }
 
   nav {
@@ -408,9 +441,35 @@ nav > ul > li > a {
     margin-top: 4px;
   }
 
-  #work #hero {
-    padding-top: 160px;
+  nav > ul > li {
+    display: inline-block;
     text-align: center;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  main {
+    padding-top: 175px;
+    overflow: hidden;
+  }
+
+  main#work {
+    padding-top: 0;
+  }
+
+  #hero div {
+    max-width: 600px;
+    margin: auto;
   }
 
   main {
