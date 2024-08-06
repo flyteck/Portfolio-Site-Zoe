@@ -245,6 +245,12 @@ nav > ul > li {
   text-align: left;
 }
 
+.navtoggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -307,10 +313,14 @@ nav > ul > li > a {
   border-radius: 6px;
 }
 
-  nav > ul > li {
-    display: inline-block;
-    text-align: center;
-  }
+nav > ul > li {
+  display: inline-block;
+  text-align: center;
+}
+
+body.project-page #navigation {
+  box-shadow: none;
+}
 
 /******************** General ********************/
 
@@ -445,7 +455,7 @@ nav > ul > li > a {
 
 #jump-menu {
   position: fixed;
-  top: 122px;
+  top: 110px;
   width: 100%;
   padding: 10px 20px;
   background: #fff8f0;
@@ -505,18 +515,12 @@ nav > ul > li > a {
     justify-content: center;
   }
 
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
-
   #home .button {
     padding: 10px 20px 8px;
   }
 
   nav > ul {
-    margin: 1em 0;
+    margin: 10px 0;
   }
 
   .navtoggle li:not(:last-child) {
