@@ -22,23 +22,26 @@
     </style>
 
   </head>
-  <body id="aquire">
+  <body id="aquire" class="project-page">
     <header>
       <div id="navigation">
-        <div class="icon-row">
-          <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
-          <div>
-            <div><a href="index.html">Zoe Amaral</a></div>
-            <div class="subtitle">UI/UX/FED</div>
+        <div class="navtoggle" id="myNavtoggle">
+          <div class="icon-row">
+            <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+            <div>
+              <div><a href="index.html">Zoe Amaral</a></div>
+              <div class="subtitle">UI/UX/FED</div>
+            </div>
           </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars" id="navtoggle-icon"></i></a></li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
 
@@ -51,6 +54,17 @@
           <source srcset="img/aquire/title-image-sm.jpg" media="(max-width:767px)">
           <img src="img/aquire/title-image.jpg" alt="Aquire">
         </picture>
+
+        <div id="jump-menu">
+          <ul>
+            <li><strong>Jump to:</strong></li>
+            <li><a href="#Aquire" class="button">Top</a></li>
+            <li><a href="#Ideation-and-Approach" class="button">Ideation & Approach</a></li>
+            <li><a href="#Wireframes" class="button">Wireframes</a></li>
+            <li><a href="#High-Fidelity" class="button">High Fidelity</a></li>
+            <li><a href="#Structure-Components-Prototypes" class="button">Structure, Components, & Prototypes</a></li>
+            <li><a href="#Final-Display" class="button">Final Display</a></li>
+        </div>
 
         <picture>
           <source srcset="img/aquire/MacBook-Home-SM.png" media="(max-width:767px)">
@@ -79,7 +93,7 @@
 
         <hr>
 
-        <div>
+        <div id="Ideation-and-Approach">
           <h3>Ideation & Approach</h3>
 
           <p>I chose to approach Aquire from a visual-design first direction, placing strong emphasis on the colours. A storefront should be clean, simple, and easy to use - but that doesn’t mean it shouldn’t stand out. I spent a lot of time with the colours to ensure that they do some heavy lifting when it comes to making the user experience pleasant.</p>
@@ -115,7 +129,7 @@
 
         <hr>
 
-        <div>
+        <div id="Wireframes">
           <h3>Wireframes</h3>
 
           <p>Creating wireframes for this app was relatively simple, as the final app was always intended to use high contrast blocks of colour and white to create an appealing, clean design.</p>
@@ -140,7 +154,7 @@
 
         <hr>
 
-        <div>
+        <div id="High-Fidelity">
           <h3>High Fidelity</h3>
           <p>I was happy with my first set of high fidelity wireframes; however, after some feedback and critique, I felt that the header was a bit cluttered and unbalanced.</p>
 
@@ -186,8 +200,8 @@
 
         <hr>
 
-        <div>
-          <h3>Structure, Components, and Prototypes</h3>
+        <div id="Structure-Components-Prototypes">
+          <h3>Structure, Components, & Prototypes</h3>
 
           <p>While working on this app, I put in special effort to keep things organized and clear, for ease of editing and responsive design. All screens are built using a column system and auto layouts, and I began building components early. Here’s some of the components and their various states, for the functional prototype of the app. I felt that it was important to prototype these animations, as they’re important to the feel and functionality of the app.</p>
 
@@ -203,7 +217,7 @@
 
         <hr>
 
-        <div>
+        <div id="Final-Display">
           <h3>Final High Fidelity Screens</h3>
 
           <!-- In my portfolio, these are stacked and scaled. I will either style them the same here, or make a carousel for each device./-->
