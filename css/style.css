@@ -213,7 +213,6 @@ p.project-description {
 
 #navigation {
   background: #33484B;
-  padding: 20px 20px 10px;
   margin: 0;
   position: fixed;
   box-shadow: 0 2px 5px #131e20;
@@ -246,10 +245,8 @@ nav > ul > li {
 }
 
 .navtoggle {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+      padding: 20px 20px 15px;
+  }
 
 .navtoggle li:not(:last-child) {
   display: none;
@@ -265,8 +262,8 @@ nav > ul > li {
 
 .navtoggle li .icon {
   position: absolute;
-  right: 0;
-  top: 2px;
+  right: 12px;
+  top: 20px;
   font-size: 35px;
 }
 
@@ -454,8 +451,6 @@ body.project-page #navigation {
 }
 
 #jump-menu {
-  position: fixed;
-  top: 110px;
   width: 100%;
   padding: 10px 20px;
   background: #fff8f0;
@@ -463,16 +458,22 @@ body.project-page #navigation {
   box-shadow: 0 2px 5px #131e20;
 }
 
+#jump-menu li:not(:first-child) {
+  display: none;
+}
+
 #jump-menu ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   align-items: center;
+  margin: 0;
 }
 
 #jump-menu li {
   display: inline-block;
+  margin-right: 10px;
 }
 
 #jump-menu .button {
@@ -488,6 +489,16 @@ body.project-page #navigation {
 
   #hero h1 {
     font-size: 2.8em;
+  }  
+
+  .navtoggle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  #jump-menu li:not(:first-child) {
+    display: inline-block;
   }
 
   nav > ul > li > a {
@@ -543,7 +554,7 @@ body.project-page #navigation {
   }
 
   body.project-page main {
-    padding-top: 190px;
+    padding-top: 180px;
   }
 
   .col-md-6 {
