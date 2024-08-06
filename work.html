@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">    
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Zoe Amaral">
+    <meta name="description" content="This is the home page of my website">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="img/logofav.png" rel="shortcut icon">
+
+    <title>UI/UX/Web Dev Portfolio - Zoe Amaral</title>
+
+  </head>
+  <body>
+    <header>
+      <div id="navigation">
+        <div class="navtoggle" id="myNavtoggle">
+          <div class="icon-row">
+            <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+            <div class="flex-column">
+              <a href="index.html">Zoe Amaral</a>
+              <div class="subtitle">UI/UX/FED</div>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="work.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="menu-icon"><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars" id="navtoggle-icon"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="work">
+      <div class="container">
+        <h2>My Work</h2>
+        <div class="project-container row" id="aquire-project">
+
+          <div class="col-md-6">
+            <picture>
+              <source srcset="img/aquire/aquireThumbSM.jpg" media="(max-width:767px)">
+              <img src="img/aquire/aquireThumb.jpg" alt="Aquire">
+            </picture>
+          </div>
+          <div class="col-md-6">
+            <h3>Aquire</h3>
+            <p class="project-description">
+              Aquire is an online storefront for fish and aquarium supplies, designed to be inviting and friendly as well as easy to use.
+            </p>
+            <a href="aquire.html" class="button">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-container row" id="cat-tracks-project">
+          <div class="col-md-6">
+            <picture>
+              <source srcset="img/catTracks/catTracksThumbSM.jpg" media="(max-width:767px)">
+              <img src="img/catTracks/catTracksThumb.jpg" alt="Cat Tracks">
+            </picture>
+          </div>
+          <div class="col-md-6">
+            <h3>Cat Tracks</h3>
+            <p class="project-description">
+              Cat Tracks is a mobile app inspired by late-night walks with my old roommate.
+            </p>
+            <a href="#catTracks" class="button">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-container row" id="UtR-project">
+          <div class="col-md-6">
+            <picture>
+              <source srcset="img/utr/uTRThumbSM.jpg" media="(max-width:767px)">
+              <img src="img/utr/uTRThumb.jpg" alt="Under The Rosebed">
+            </picture>
+          </div>
+          <div class="col-md-6">
+            <h3>Under The Rosebed</h3>
+            <p class="project-description">
+              Under The Rosebed is a webcomic I write and illustrate - but I also built and designed the website it’s hosted on myself.
+            </p>
+            <a href="#utr" class="button">View Project</a>
+          </div>
+        </div>
+
+      </div>
+    </main>
+    <footer id="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <p class="content"><a href="tel:+6476292113">647-629-2113</a></p>
+        <a href="mailto:naturegirl14@rogers.com" class="button contact">Send Email</a>
+        <ul class="socials">
+          <li><a href="https://www.deviantart.com/flyteck" class="social-link deviantart" target="_blank"><i class="fa-brands fa-deviantart"></i></a></li>
+          <li><a href="https://www.behance.net/zoeamaral" class="social-link behance" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
+          <li><a href="linkedin" class="social-link linkeden"><i class="fa-brands fa-linkedin-in" target="_blank"></i></a></li>
+          <li><a href="twitter" class="social-link twitter"><i class="fa-brands fa-twitter" target="_blank"></i></a></li>
+        </ul>
+        <p class="copyright">
+          Copyright Zoe Amaral 2024
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

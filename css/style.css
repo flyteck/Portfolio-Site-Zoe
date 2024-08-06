@@ -30,17 +30,15 @@ main {
   overflow: hidden;
 }
 
-main#work {
+main#home {
   padding-top: 0;
 }
 
-#hero div {
-  max-width: 600px;
-  margin: auto;
-}
-
-#work #hero {
-  padding-top: 145px;
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /** did this as a fix for the cream BG showing if you over scroll past the hero on the work page **/
@@ -130,10 +128,12 @@ header ul, footer ul {
   padding: 30px 20px;
   background: #586960;
   color: white;
+  height: 100vh;
 }
 
 #hero h1 {
   margin: 0;
+  font-size: 3em;
 }
 
 #hero p {
@@ -192,6 +192,13 @@ p.project-description {
   text-align: center;
 }
 
+#home #navigation {
+  position: unset;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+}
+
 #navigation a:hover,  #navigation a:focus, #navigation a:active {
   color: #B4AEF1;
 }
@@ -210,6 +217,10 @@ nav > ul > li {
 
 .navtoggle li:not(:last-child) {
   display: none;
+}
+
+.navtoggle li:last-child {
+  display: inline;
 }
 
 .navtoggle, .navtoggle.responsive {
@@ -265,6 +276,11 @@ nav > ul > li > a {
   overflow: hidden;
   border-radius: 6px;
 }
+
+  nav > ul > li {
+    display: inline-block;
+    text-align: center;
+  }
 
 /******************** General ********************/
 
@@ -425,36 +441,6 @@ nav > ul > li > a {
   text-align: center;
 }
 
-
-/*********************** SVG Animation **********************/
-
-.sun {
-  animation: 10s color-change infinite alternate linear;
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
-}
-
-@keyframes cloud-move {
-  from {transform: translate(0,70px);}
-  to {transform: translate(200px,70px);}
-}
-
-@keyframes cloud-move-reverse {
-  from {transform: translate(500px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-
 /********************************************* Media Queries ********************************************/
 
 /* Medium devices (640px and larger) */
@@ -491,9 +477,26 @@ nav > ul > li > a {
     margin-top: 4px;
   }
 
-  nav > ul > li {
-    display: inline-block;
-    text-align: center;
+  #home nav {
+    float: none;
+  }
+
+  #home nav ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+
+  #home .menu-icon {
+    display: none;
+  }
+
+  #home nav ul li {
+    margin-right: 10px;
+  }
+
+  #home .button {
+    padding: 10px 20px 8px;
   }
 
   nav > ul {
@@ -513,13 +516,10 @@ nav > ul > li > a {
     overflow: hidden;
   }
 
-  main#work {
-    padding-top: 0;
-  }
-
   #hero div {
-    max-width: 600px;
-    margin: auto;
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   body.project-page main {
