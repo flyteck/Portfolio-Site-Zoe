@@ -411,7 +411,7 @@ body.project-page #navigation {
 /******************** Typography for each project, and other project-specific styles ********************/
 
 #aquire .accent {
-  color:  #df4426;
+  color: #d82400;
 }
 
 #typography-aquire li {
@@ -454,19 +454,19 @@ body.project-page #navigation {
 
 [class*="mockup-wrapper"] picture {
   display: block;
-  margin-right: -15%;
+  margin-right: -10%;
   margin-bottom: -18%;
 }
 
 .mockup-wrapper-tablet picture {
-  margin-right: -10%;
+  margin-right: -5%;
 }
 
 .mockup-wrapper-tablet img {
   max-width: 600px;
 }
 
-.mockup-wrapper-desktop picture {
+.mockup-wrapper-desktop picture img {
   margin-bottom: -40%;
 }
 
