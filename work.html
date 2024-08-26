@@ -14,6 +14,8 @@
 
     <title>UI/UX/Web Dev Portfolio - Zoe Amaral</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Quicksand:wght@300..700&family=Fredericka+the+Great" rel="stylesheet">
+
   </head>
   <body>
     <header>
@@ -30,8 +32,16 @@
             <ul>
               <li><a href="work.html">Work</a></li>
               <li><a href="about.html">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li class="menu-icon"><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars" id="navtoggle-icon"></i></a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="menu-icon">
+                <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                  <div id="navtoggle-icon">
+                    <img src="img/line.svg" class="left-line">
+                    <img src="img/line.svg" class="right-line">
+                    <img src="img/line.svg" class="right-line">
+                  </div>
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -95,9 +105,6 @@
     
     <footer id="contact">
       <div class="container">
-        <h2>Get In Touch</h2>
-        <p class="content"><a href="tel:+6476292113">647-629-2113</a></p>
-        <a href="mailto:naturegirl14@rogers.com" class="button contact">Send Email</a>
         <ul class="socials">
           <li><a href="https://www.deviantart.com/flyteck" class="social-link deviantart" target="_blank"><i class="fa-brands fa-deviantart"></i></a></li>
           <li><a href="https://www.behance.net/zoeamaral" class="social-link behance" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
