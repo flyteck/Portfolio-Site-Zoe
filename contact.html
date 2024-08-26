@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">    
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Zoe Amaral">
+    <meta name="description" content="This is the about page of my website">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="img/logofav.png" rel="shortcut icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Quicksand:wght@300..700&family=Fredericka+the+Great" rel="stylesheet">
+
+    <title>Contact</title>
+
+  </head>
+  <body id="contact">
+
+    <header>
+      <div id="navigation">
+        <div class="navtoggle" id="myNavtoggle">
+          <div class="icon-row">
+            <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+            <div class="flex-column">
+              <a href="about.html">Zoe Amaral</a>
+              <div class="subtitle">UI/UX/FED</div>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="work.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="menu-icon">
+                <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                  <div id="navtoggle-icon">
+                    <img src="img/line.svg" class="left-line">
+                    <img src="img/line.svg" class="right-line">
+                    <img src="img/line.svg" class="right-line">
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="contact-wrap">
+        	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9-1szNrKWcuhV8hJdr7AgpItJ85FGvok1ZFxZaSu-z-laXw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" id="ContactForm">Loading…</iframe>
+        </div>
+      </div>
+
+    </main>
+
+    <footer id="contact">
+      <div class="container">
+        <ul class="socials">
+          <li><a href="https://www.deviantart.com/flyteck" class="social-link deviantart" target="_blank"><i class="fa-brands fa-deviantart"></i></a></li>
+          <li><a href="https://www.behance.net/zoeamaral" class="social-link behance" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
+          <li><a href="linkedin" class="social-link linkeden" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="twitter" class="social-link twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+        <p class="copyright">
+          Copyright Zoe Amaral 2024
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+    	var iframeDoc = document.getElementById('ContactForm').contentWindow.document;
+		console.log(iframeDoc);
+		var height =iframeDoc.body.scrollHeight;
+		console.log(height);
+	</script>
+  </body>
+</html>
