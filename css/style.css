@@ -231,7 +231,7 @@ main#home {
 .icon-row a {
   color: #FFF8F0;
   text-decoration: none;
-  height: 80px;
+  height: 65px;
 }
 
 .icon-row img {
@@ -287,9 +287,9 @@ nav > ul {
 }
 
 .navtoggle {
-  padding: 20px 20px 15px;
+  padding: 15px 20px;
   transition: height 200ms ease;
-  height: 120px;
+  height: 90px;
 }
 
 #navtoggle-icon {
@@ -326,6 +326,7 @@ nav > ul {
 
 .navtoggle, .navtoggle.responsive {
   position: relative;
+  font-size: 85%;
 }
 
 .navtoggle .icon {
@@ -463,7 +464,7 @@ body.project-page #navigation {
 
 .logo {
   max-width: 100%;
-  width:80px;
+  width:65px;
   border-radius:4px
 }
 
@@ -565,7 +566,7 @@ body.project-page #navigation {
 
 #contact iframe {
   width: 100%;
-  min-height: 1300px;
+  min-height: 1450px;
   filter: drop-shadow(0 0 5px #fff8f1);
   background: linear-gradient(0deg, #eff0e9, transparent 300px);
   animation: 00ms fade-in;
@@ -648,7 +649,7 @@ body.project-page #navigation {
   }
 
   main {
-    padding-top: 130px;
+    padding-top: 90px;
     overflow: hidden;
   }
 
@@ -707,7 +708,7 @@ body.project-page #navigation {
   }
 
   #contact iframe {
-    min-height: 1250px;
+    min-height: 1380px;
   }
 }
 
