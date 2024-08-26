@@ -9,20 +9,33 @@ Accent 2 (Blue): #91c9ff;
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Akshar:wght@300..700');
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Kufam:ital,wght@0,400..900;1,400..900&family=Varela+Round&family=Zen+Maru+Gothic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Mate:ital@0;1&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Kufam:ital,wght@0,400..900;1,400..900&family=Varela+Round&family=Zen+Maru+Gothic');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Mate:ital@0;1&family=Teko:wght@300..700');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700');
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  background: #33484b;
+}
+
 body {
   background: #FFF8F0;
-  font-family: 'Akshar', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   color: #33484b;
   font-weight: 350;
   font-size: 18px;
   line-height: 1.6;
+}
+
+body {
+  animation: 1000ms fade-in;
 }
 
 main {
@@ -34,14 +47,23 @@ footer {
   text-align: center;
   margin-top: 20px;
   border-top: 1px solid #33484B;
+  padding-bottom: 5px;
 }
 
 b, strong {
-  font-weight: bold;
+  font-weight: 500;
+}
+
+h1, h3, h4, h5 {
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 600;
 }
 
 h1,h2 {
-  font-family: 'Electrolize', sans-serif;
+  font-family: 'Cabin Sketch', sans-serif;
 }
 
 h1 {
@@ -131,8 +153,8 @@ main#home {
   justify-content: center;
 }
 
-#hero div {
-  animation: 1000ms fade-in;
+#hero p {
+  font-size: 20px;
 }
 
 @keyframes fade-in {
@@ -171,7 +193,7 @@ main#home {
 }
 
 .subtitle {
-  font-size: 90%;
+  font-size: 80%;
   opacity: 0.8;
 }
 
@@ -265,8 +287,34 @@ nav > ul {
 }
 
 .navtoggle {
-      padding: 20px 20px 15px;
-  }
+  padding: 20px 20px 15px;
+  transition: height 200ms ease;
+  height: 120px;
+}
+
+#navtoggle-icon {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#navtoggle-icon img {
+    width: 35px;
+}
+
+.left-line, .right-line {
+  margin: 4px 0;
+  transition: 200ms ease;
+}
+
+#navtoggle-icon.open .left-line {
+    transform: rotate(45deg);
+}
+
+#navtoggle-icon.open .right-line {
+    transform: rotate(-45deg);
+    position: absolute;
+}
 
 .navtoggle li:not(:last-child) {
   display: none;
@@ -280,18 +328,24 @@ nav > ul {
   position: relative;
 }
 
-.navtoggle li .icon {
+.navtoggle .icon {
   position: absolute;
   right: 12px;
   top: 20px;
   font-size: 35px;
+  display: block;
+  height: 30px;
+}
+
+#navtoggle-icon.open {
+  margin-top:10px;
 }
 
 nav > ul > li > a {
   padding: 0 10px;
   color: white;
   text-decoration: none;
-  font-family: 'Electrolize', sans-serif;
+  font-family: 'Cabin Sketch', sans-serif;
   font-size: 1.4em;
 }
 
@@ -303,6 +357,10 @@ nav > ul > li > a {
   padding: 24px 0 0;
 }
 
+.navtoggle.responsive {
+  height: 100vh;
+}
+
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
@@ -311,6 +369,7 @@ nav > ul > li > a {
 
 .navtoggle.responsive li:last-child  {
   padding: 0 0 10px;
+  border:none;
 }
 
 .flex-column {
@@ -502,6 +561,28 @@ body.project-page #navigation {
   text-align: center;
 }
 
+/********************** Contact Page *********************/
+
+#contact iframe {
+  width: 100%;
+  min-height: 1300px;
+  filter: drop-shadow(0 0 5px #fff8f1);
+  background: linear-gradient(0deg, #eff0e9, transparent 300px);
+  animation: 00ms fade-in;
+}
+
+.contact-wrap {
+  text-align: center;
+  background: url(../img/floral-green.jpg);
+  background-size: 450px;
+  padding: 10px 0;
+  border-radius: 10px;
+  margin: auto;
+  width: fit-content;
+  width: 100%;
+  border: 1px solid #98b29b;
+}
+
 /********************************************* Media Queries ********************************************/
 
 /* Medium devices (640px and larger) */
@@ -615,6 +696,19 @@ body.project-page #navigation {
     margin: 0 20px 0 0;
   }
 
+}
+
+/*Contact Form ( 800px or larger) */
+@media only screen and (min-width: 800px) {
+  .contact-wrap {
+    max-width: 780px;
+    width: auto;
+    padding: 2vw;
+  }
+
+  #contact iframe {
+    min-height: 1250px;
+  }
 }
 
 /*Large devices (1024px or larger)*/
