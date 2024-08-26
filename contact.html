@@ -14,10 +14,10 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Quicksand:wght@300..700&family=Fredericka+the+Great" rel="stylesheet">
 
-    <title>About Zoe</title>
+    <title>Contact</title>
 
   </head>
-  <body id="about">
+  <body id="contact">
 
     <header>
       <div id="navigation">
@@ -50,51 +50,9 @@
     </header>
 
     <main>
-        <div class="container">
-        <div class="about">
-          <h2>About Zoe</h2>
-
-          <div class="row">
-            <div class="my-story column col-lg-9">
-              <h3>My Story</h3>
-              <div>
-                <picture>
-                  <source srcset="img/zoeProfileImage.jpg" media="(max-width:767px)">
-                  <img src="img/zoeProfileImage.jpg" alt="Zoe Amaral Profile">
-                </picture>
-                <p><strong>Where are you based?</strong> I live in Guelph, Ontario.</p>
-                <p><strong>How do you spend your free time?</strong> When I’m not drawing (I’m usually drawing), I love being outdoors. I’ve been horseback riding since I was a kid, so I love being around the ranch, as well as going for walks in the woods and just enjoying nature in general. I’m also a big fan of video games, especially rhythm games and open world exploration.</p>
-                <p><strong>What’s a fun fact about you?</strong> I essentially live in a little zoo! I love animals, and have had pets all my life - I never feel right without them. Right now I have a ball python, leopard gecko, three hermit crabs, a pacman frog, a toad, a vinegaroon, and two tropical fishtanks.</p>
-
-                <p><strong>What's your prior experience?</strong> I have little professional experience in UI/UX or web design just yet, but it’s something I’m excited to get properly in to. I started designing websites as places to share and organize my art and characters, and found it to be very enjoyable work - so I looked into education surrounding it and began building my skillset and portfolio. I love finding creative and functional ways to share information and tell stories, and web design is a natural extension of that for me.</p>
-              </div>
-
-              <a href="#" class="button contact" target="_blank">Download my Resume</a>
-            </div>
-
-            <div class="row">
-              <div class="skills-and-tools column col-lg-3">
-                <h3>Skills & Tools</h3>
-                
-                <div class="col-md-6">
-                  <h4>Skills</h4>
-                  <ul>
-                    <li>UI Design</li>
-                    <li>UX Design</li>
-                    <li>Front End Web Development</li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <h4>Tools</h4>
-                  <ul>
-                    <li>Figma</li>
-                    <li>Sublime Text</li>
-                    <li>CSS, HTML, Javascript</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="container">
+        <div class="contact-wrap">
+        	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9-1szNrKWcuhV8hJdr7AgpItJ85FGvok1ZFxZaSu-z-laXw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" id="ContactForm">Loading…</iframe>
         </div>
       </div>
 
@@ -115,5 +73,11 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+    	var iframeDoc = document.getElementById('ContactForm').contentWindow.document;
+		console.log(iframeDoc);
+		var height =iframeDoc.body.scrollHeight;
+		console.log(height);
+	</script>
   </body>
 </html>
