@@ -435,6 +435,7 @@ body.project-page #navigation {
   justify-content: center;
 }
 
+
 .button.secondary {
   background: none;
   color: #33484B;
@@ -585,7 +586,6 @@ picture {
 }
 
 #jump-menu.open {
-  height: 85px;
   min-height: fit-content;
 }
 
@@ -595,7 +595,6 @@ picture {
   height: auto;
   opacity: 1;
   overflow: auto;
-}
 }
 
 #jump-menu.open .button.toggle {
