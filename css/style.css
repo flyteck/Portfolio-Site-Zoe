@@ -23,6 +23,7 @@ Accent 2 (Blue): #91c9ff;
 
 html {
   background: #33484b;
+  scroll-behavior: smooth; 
 }
 
 body {
