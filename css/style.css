@@ -423,13 +423,25 @@ body.project-page #navigation {
   border-color: #586960;
 }
 
-.button.contact {
+#jump-menu .button.toggle {
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button.secondary {
   background: none;
   color: #33484B;
   border-width: 2px;
 }
 
-.button.contact:hover, .button.contact:focus {
+.button.secondary:hover, .button.secondary:focus {
   background: #586960;
   color: #FFF8F0;
   border-color: #33484B;
@@ -506,40 +518,44 @@ body.project-page #navigation {
 
 /*********************** General Project Page **********************/
 
+picture {
+  display: block;
+  width: fit-content;
+  margin: auto;
+}
+
 [class*="mockup-wrapper"] {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 60px;
+  align-items: center;
+  justify-content: center;
 }
 
 [class*="mockup-wrapper"] picture {
-  display: block;
-  margin-right: -10%;
-  margin-bottom: -18%;
-}
-
-.mockup-wrapper-tablet picture {
-  margin-right: -5%;
-}
-
-.mockup-wrapper-tablet img {
-  max-width: 600px;
-}
-
-.mockup-wrapper-desktop picture img {
-  margin-bottom: -40%;
+  margin: 10px;
+  filter: drop-shadow(2px 2px 2px #5a3c2162) drop-shadow(12px 12px 10px #5a3c2192);
 }
 
 #jump-menu {
   width: 100%;
-  padding: 10px 20px;
+  padding: 5px 20px;
   background: #fff8f0;
   left: 0;
   box-shadow: 0 2px 5px #131e20;
+  font-size: 80%;
+  height: 35px;
+  transition: 300ms ease;
+  overflow: hidden;
 }
 
 #jump-menu li:not(:first-child) {
-  display: none;
+  display: inline;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: 200ms ease;
+  overflow: hidden;
 }
 
 #jump-menu ul {
@@ -560,6 +576,30 @@ body.project-page #navigation {
   padding: 4px 10px 2px;
   min-width: 60px;
   text-align: center;
+  margin: 0 0 5px;
+}
+
+#jump-menu .button.toggle {
+  transform: rotate(45deg);
+  transition: 200ms ease;
+}
+
+#jump-menu.open {
+  height: 85px;
+  min-height: fit-content;
+}
+
+#jump-menu.open li:not(:first-child) { 
+  display: inline-block;
+  width: auto;
+  height: auto;
+  opacity: 1;
+  overflow: auto;
+}
+}
+
+#jump-menu.open .button.toggle {
+  transform: rotate(0deg);
 }
 
 /********************** Contact Page *********************/
@@ -599,8 +639,24 @@ body.project-page #navigation {
       justify-content: space-between;
   }
 
+  #jump-menu {
+    height: auto;
+  }
+
+  #jump-menu .button {
+    margin: 5px 0;
+  }
+
   #jump-menu li:not(:first-child) {
     display: inline-block;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    overflow: auto;
+  }
+
+  #jump-menu .button.toggle {
+    display: none;
   }
 
   nav > ul > li > a {
@@ -660,7 +716,7 @@ body.project-page #navigation {
   }
 
   body.project-page main {
-    padding-top: 180px;
+    padding-top: 140px;
   }
 
   .col-md-6 {
@@ -751,6 +807,14 @@ body.project-page #navigation {
   .skills-and-tools .col-md-6 {
     float: none;
     width: 100%;
+  }
+
+  .mockup-wrapper-tablet picture {
+    max-width: 40%;
+  }
+
+  #High-Fidelity [class*="mockup-wrapper"] picture {
+    max-width: 45%;
   }
 
 
