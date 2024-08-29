@@ -1,3 +1,8 @@
+//global variables
+
+//main nav container
+var navContainer = document.getElementById("myNavtoggle");
+
 //toggles the menu open/close for mobile
 function menuToggle() {
     var navContainer = document.getElementById("myNavtoggle");
@@ -14,28 +19,37 @@ function menuToggle() {
     }
 }
 
-function jumpMenuOpen() {
-  var jumpContainer = document.getElementById("jump-menu");
-  //get the jump menu container
-
-  //if container is open, remove open to close it
-  if (jumpContainer.classList.contains("open")) {
-        jumpContainer.classList.remove("open");
-        jumpContainer.style.height = "";
-
-  //else, open it, and set the container's height to the content scrollheight to ensure smooth animation with dynamic height
-    } else {
-        jumpContainer.classList.add("open");
-
-        var containerHeight = jumpContainer.scrollHeight;
-        var containerHeight = containerHeight + "px";
-        //get the required height of the container, add "px" to it, and set the open container to that
-
-        jumpContainer.style.height = containerHeight;
-
-        //aaand as a fallback in case for some reason scrollheight returns null, set the container to auto so it still opens
-        if (containerHeight === null) {
-          jumpContainer.style.height = "auto";
-        }
+//Minimizes the main menu, but stickies it in the corner, for desktop.
+addEventListener("scroll", menuScroll);
+  
+function menuScroll() {
+    if (window.scrollY !== 0) {
+      navContainer.classList.add("scrolled");
+    } 
+    if (window.scrollY === 0) {
+      navContainer.classList.remove("scrolled");
     }
+  }
+
+
+navContainer.addEventListener("mouseover", menuOpen);
+navContainer.addEventListener("mouseleave", menuClose);
+
+
+
+function menuOpen() {
+  if (window.scrollY !== 0) {
+    navContainer.classList.remove("scrolled");
+  } else {
+    return
+  }
+
+}
+
+function menuClose() {
+  if (window.scrollY !== 0) {
+    navContainer.classList.add("scrolled"); 
+  } else {
+    return
+  }
 }

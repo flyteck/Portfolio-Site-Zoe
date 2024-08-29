@@ -49,6 +49,7 @@ function setAreaHeight() {
   }
 }
 
+//set the scrollheight on load, and also if the viewport changes (as this may change the jumplink sizes)
 window.addEventListener("load", function () {
   setAreaHeight()
 });
