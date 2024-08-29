@@ -1,10 +1,14 @@
-//global variables
+//*********************** global variables
 
 //main nav container
 var navContainer = document.getElementById("myNavtoggle");
 
 //jumplink container
 var jumpLink = document.getElementById("jump-menu");
+
+//*********************** /global variables
+
+//*********************** Mobile Menu Code
 
 //toggles the menu open/close for mobile
 function menuToggle() {
@@ -21,6 +25,10 @@ function menuToggle() {
         navIcon.classList.remove("open");
     }
 }
+
+//*********************** /Mobile Menu Code
+
+//*********************** Main Menu Code for Desktop
 
 //Minimizes the main menu, but stickies it in the corner, for desktop.
 addEventListener("scroll", menuScroll);
@@ -89,3 +97,5 @@ function absolutePosition() {
 function remove() {
   jumpLink.classList.remove("minimized")
 }
+
+//*********************** /Main Menu Code for Desktop
