@@ -34,11 +34,11 @@ function setAreaHeight() {
   //get all categories
   var pageIDs = document.querySelectorAll(".area-header-link");
 
-  //get the sticky nav's height
-  var navHeight = document.getElementById("navigation").scrollHeight;
+  //get the jump link menu's height
+  var jumpHeight = document.getElementById("jump-menu").scrollHeight;
 
   //add extra padding
-  var combined = parseInt(navHeight) + 20;
+  var combined = parseInt(jumpHeight) + 20;
 
   //and add px to it
   var paddingBuffer = combined + "px";
