@@ -436,7 +436,6 @@ body.project-page #navigation {
   justify-content: center;
 }
 
-
 .button.secondary {
   background: none;
   color: #33484B;
@@ -542,6 +541,7 @@ picture {
 #jump-menu {
   width: 100%;
   padding: 5px 20px;
+  padding-right: 40px;
   background: #fff8f0;
   left: 0;
   box-shadow: 0 2px 5px #131e20;
@@ -637,31 +637,44 @@ picture {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      transition: height 200ms ease, opacity 200ms ease;
+      transition: height 200ms 200ms ease, width 200ms ease;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      right: 0;
   }
 
   .navtoggle.scrolled {
-    height: 40px;
-    width: 40px;
-    margin: 10px;
-    position: absolute;
-    right: 0;
-    border-radius: 100%;
+    height: 55px;
+    width: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.6;
+    position: absolute;
+    border-radius: 0 0 0 14px;
+  }
+
+  .navtoggle. .icon-row, .navtoggle ul {
+    transition: 200ms ease;
   }
 
   .navtoggle.scrolled .icon-row, .navtoggle.scrolled ul {
-    display: none;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .navtoggle .icon-row, .navtoggle ul {
+    transition: 500ms opacity ease;
   }
 
   .navtoggle.scrolled:after {
-    content: '+';
+    content: '+menu';
     color: white;
-    font-size: 40px;
-    margin-top: -5px;
+    flex-grow: 1;
   }
 
   #jump-menu {
