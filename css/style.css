@@ -679,6 +679,14 @@ picture {
 
   #jump-menu {
     height: auto;
+    max-height: 20vh;
+    transition: max-height 400ms ease, padding 300ms ease;
+  }
+
+  #jump-menu.minimized {
+    max-height: 0;
+    padding: 0;
+    transition: none;
   }
 
   #jump-menu .button {

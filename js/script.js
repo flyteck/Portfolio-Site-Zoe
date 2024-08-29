@@ -3,6 +3,9 @@
 //main nav container
 var navContainer = document.getElementById("myNavtoggle");
 
+//jumplink container
+var jumpLink = document.getElementById("jump-menu");
+
 //toggles the menu open/close for mobile
 function menuToggle() {
     var navContainer = document.getElementById("myNavtoggle");
@@ -30,11 +33,19 @@ function menuScroll() {
     } 
     if (window.scrollY === 0) {
       navContainer.classList.remove("scrolled");
+      
       //after transitions are done, set the position
       setTimeout(absolutePosition, 200);
+      
+      //and if there's jumplinks, minimize them to smooth transition
+      if (jumpLink !== null) {
+        jumpLink.classList.add("minimized");
+        setTimeout(remove, 300);
+      }
     }
   }
 
+//Reopens and closes the menu on hover
 navContainer.addEventListener("mouseover", menuOpen);
 navContainer.addEventListener("mouseleave", menuClose);
 
@@ -43,6 +54,13 @@ function menuOpen() {
     navContainer.classList.remove("scrolled");
     //after transitions are done, set the position
     setTimeout(absolutePosition, 200);
+    
+    //and if there's jumplinks, minimize them to smooth transition
+    if (jumpLink !== null) {
+      jumpLink.classList.add("minimized");
+      setTimeout(remove, 300);
+    }
+
   } else {
     return
   }
@@ -58,10 +76,16 @@ function menuClose() {
   }
 }
 
+//For the hover animation to be clean, the positioning needs to be done *after* the animation, so it's done here
 function absolutePosition() {
   if (navContainer.classList.contains("scrolled")) {
     navContainer.style.position = "absolute";
   } else {
     navContainer.style.position = "relative";
   }
+}
+
+//remove class on jumplink to finish transition
+function remove() {
+  jumpLink.classList.remove("minimized")
 }
