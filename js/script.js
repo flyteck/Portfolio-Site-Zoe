@@ -54,7 +54,7 @@ function menuScroll() {
   }
 
 //Reopens and closes the menu on hover
-navContainer.addEventListener("mouseover", menuOpen);
+navContainer.addEventListener("mouseenter", menuOpen);
 navContainer.addEventListener("mouseleave", menuClose);
 
 function menuOpen() {
