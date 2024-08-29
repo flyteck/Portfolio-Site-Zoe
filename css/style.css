@@ -644,6 +644,10 @@ picture {
       right: 0;
   }
 
+  .navtoggle.absolute {
+    position: absolute;
+  }
+
   .navtoggle.scrolled {
     height: 55px;
     width: 80px;

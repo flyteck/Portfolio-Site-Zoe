@@ -87,9 +87,9 @@ function menuClose() {
 //For the hover animation to be clean, the positioning needs to be done *after* the animation, so it's done here
 function absolutePosition() {
   if (navContainer.classList.contains("scrolled")) {
-    navContainer.style.position = "absolute";
+    navContainer.classList.add("absolute");
   } else {
-    navContainer.style.position = "relative";
+    navContainer.classList.remove("absolute");
   }
 }
 
