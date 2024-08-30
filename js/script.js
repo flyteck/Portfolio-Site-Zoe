@@ -2,6 +2,7 @@
 
 //main nav container
 var navContainer = document.getElementById("myNavtoggle");
+var navWrapper = document.getElementById("navigation");
 
 //jumplink container
 var jumpLink = document.getElementById("jump-menu");
@@ -30,22 +31,27 @@ function menuToggle() {
 
 //*********************** Main Menu Code for Desktop
 
+//** To-Do: Really, I should rewrite this to JUST add scrolled to #navigation, and update my CSS accordingly using #navigation and not .navtoggle for style.
+
 //Minimizes the main menu, but stickies it in the corner, for desktop.
 addEventListener("scroll", menuScroll);
   
 function menuScroll() {
+    //If the user is not at the top of the page
     if (window.scrollY !== 0) {
       navContainer.classList.add("scrolled");
+      navWrapper.classList.add("scrolled");
       //set the position
       absolutePosition();
     } 
+    //If the user is at the top of the page
     if (window.scrollY === 0) {
       navContainer.classList.remove("scrolled");
-      
+      navWrapper.classList.remove("scrolled");
       //after transitions are done, set the position
       setTimeout(absolutePosition, 200);
       
-      //and if there's jumplinks, minimize them to smooth transition
+      //and if there's jumplinks, temporarily minimize them for a smooth transition
       if (jumpLink !== null) {
         jumpLink.classList.add("minimized");
         setTimeout(remove, 300);
@@ -53,14 +59,16 @@ function menuScroll() {
     }
   }
 
-//Reopens and closes the menu on hover
+//Reopens and closes the menu on hover, listeners for hover, and click for touchscreens
 navContainer.addEventListener("mouseenter", menuOpen);
 navContainer.addEventListener("click", menuOpen);
 navContainer.addEventListener("mouseleave", menuClose);
 
 function menuOpen() {
+  //If the user is not at the top of the page (since we only want this to run if the menu is currently minimized)
   if (window.scrollY !== 0) {
     navContainer.classList.remove("scrolled");
+    navWrapper.classList.remove("scrolled");
     //after transitions are done, set the position
     setTimeout(absolutePosition, 200);
     
@@ -69,15 +77,16 @@ function menuOpen() {
       jumpLink.classList.add("minimized");
       setTimeout(remove, 300);
     }
-
   } else {
     return
   }
 }
 
 function menuClose() {
+  //If the user is not at the top of the page
   if (window.scrollY !== 0) {
     navContainer.classList.add("scrolled"); 
+    navWrapper.classList.add("scrolled");
     //set the position
     absolutePosition();
   } else {

@@ -540,7 +540,6 @@ picture {
 #jump-menu {
   width: 100%;
   padding: 5px 20px;
-  padding-right: 80px;
   background: #fff8f0;
   left: 0;
   box-shadow: 0 2px 5px #131e20;
@@ -548,6 +547,10 @@ picture {
   height: 35px;
   transition: 300ms ease;
   overflow: hidden;
+}
+
+#navigation.scrolled #jump-menu {
+  padding-right: 80px;
 }
 
 #jump-menu li:not(:first-child) {
