@@ -263,7 +263,6 @@ p.project-description {
   box-shadow: 0 2px 5px #131e20;
   width: 100%;
   top: 0;
-  text-align: center;
   z-index: 3;
 }
 
@@ -631,7 +630,125 @@ picture {
 
   #hero h1 {
     font-size: 2.8em;
-  }  
+  }
+
+  #jump-menu {
+    height: auto;
+  }
+
+
+  #hero p {
+    line-height: 1.6;
+  }
+
+  .row {
+    margin: 0;
+  }
+
+  .icon-row {
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  #home .button {
+    padding: 10px 20px 8px;
+  }
+
+  main {
+    padding-top: 90px;
+    overflow: hidden;
+  }
+
+  #hero div {
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  body.project-page main {
+    padding-top: 140px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .skills-and-tools .col-md-6 {
+    margin: 0 0 20px;
+    padding-top: 0;
+  }
+
+  [class*="col-md"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .project-container {
+    padding: 40px 0;
+  }
+
+  div.project-container:first-of-type {
+    padding-top: 20px;
+  }
+
+  .about picture {
+    float: left;
+    width: 50%;
+    margin: 0 20px 0 0;
+  }
+
+}
+
+/*Contact Form ( 800px or larger) */
+@media only screen and (min-width: 800px) {
+  .contact-wrap {
+    max-width: 780px;
+    width: auto;
+    padding: 2vw;
+  }
+
+  #contact iframe {
+    min-height: 1380px;
+  }
+}
+
+/*Large devices (1024px or larger)*/
+@media only screen and (min-width: 1024px) {
+
+  /* code for the menu */
+  nav > ul > li > a {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    margin: 10px 0 10px;
+  }
+
+  #navigation {
+    text-align: unset;
+  }
+
+  nav > ul > li {
+    text-align: center;
+  }
+
+  nav > ul {
+    margin: 10px 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
 
   .navtoggle {
       display: flex;
@@ -709,117 +826,7 @@ picture {
     display: none;
   }
 
-  nav > ul > li > a {
-    font-size: 1.8em;
-  }
-
-  h2 {
-    margin: 10px 0 10px;
-  }
-
-  #navigation {
-    text-align: unset;
-  }
-
-  nav > ul > li {
-    text-align: center;
-  }
-
-  #hero p {
-    line-height: 1.6;
-  }
-
-  .row {
-    margin: 0;
-  }
-
-  .icon-row {
-    display: inline-flex;
-    justify-content: center;
-  }
-
-  #home .button {
-    padding: 10px 20px 8px;
-  }
-
-  nav > ul {
-    margin: 10px 0;
-  }
-
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
-  }
-
-  main {
-    padding-top: 90px;
-    overflow: hidden;
-  }
-
-  #hero div {
-    width: 70%;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  body.project-page main {
-    padding-top: 140px;
-  }
-
-  .col-md-6 {
-    width: 50%;
-  }
-
-  .skills-and-tools .col-md-6 {
-    margin: 0 0 20px;
-    padding-top: 0;
-  }
-
-  [class*="col-md"] {
-    float: left;
-    padding: 10px;
-  }
-
-  .row:after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  .project-container {
-    padding: 40px 0;
-  }
-
-  div.project-container:first-of-type {
-    padding-top: 20px;
-  }
-
-  .about picture {
-    float: left;
-    width: 50%;
-    margin: 0 20px 0 0;
-  }
-
-}
-
-/*Contact Form ( 800px or larger) */
-@media only screen and (min-width: 800px) {
-  .contact-wrap {
-    max-width: 780px;
-    width: auto;
-    padding: 2vw;
-  }
-
-  #contact iframe {
-    min-height: 1380px;
-  }
-}
-
-/*Large devices (1024px or larger)*/
-@media only screen and (min-width: 1024px) {
+  /* code for the menu */
 
   #hero h1 {
     font-size: 3em;
