@@ -775,10 +775,6 @@ picture {
     border-radius: 0 0 0 14px;
   }
 
-  .navtoggle. .icon-row, .navtoggle ul {
-    transition: 200ms ease;
-  }
-
   .navtoggle.scrolled .icon-row, .navtoggle.scrolled ul {
     opacity: 0;
     height: 0;
@@ -786,6 +782,10 @@ picture {
     margin: 0;
     padding: 0;
     overflow: hidden;
+  }
+
+  .navtoggle.absolute .icon-row, .navtoggle.absolute ul {
+    pointer-events: none;
   }
 
   .navtoggle .icon-row, .navtoggle ul {

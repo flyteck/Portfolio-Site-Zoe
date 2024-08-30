@@ -85,7 +85,8 @@ function menuClose() {
   }
 }
 
-//For the hover animation to be clean, the positioning needs to be done *after* the animation, so it's done here
+//For the hover animation to be clean, the positioning needs to be done *after* the animation, so it's done here.
+//This class also prevents clicks inside the menu while opening on touchscreens.
 function absolutePosition() {
   if (navContainer.classList.contains("scrolled")) {
     navContainer.classList.add("absolute");
