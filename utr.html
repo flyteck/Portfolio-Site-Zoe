@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">    
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Zoe Amaral">
+    <meta name="description" content="This is Under the Rosebed's project page">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/utr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="img/logofav.png" rel="shortcut icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Quicksand:wght@300..700&family=Fredericka+the+Great" rel="stylesheet">
+
+
+    <title>Under the Rosebed</title>
+
+    <style>
+      img {
+        max-width: 100%;
+      }
+    </style>
+
+  </head>
+  <body id="utr" class="project-page">
+    <header>
+      <div id="navigation" class="area-header-link">
+
+        <div class="navtoggle" id="myNavtoggle">
+          <div class="icon-row">
+            <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+            <div class="flex-column">
+              <a href="about.html">Zoe Amaral</a>
+              <a href="work.html" class="subtitle">UI/UX/FED</a>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="work.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="menu-icon">
+                <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                  <div id="navtoggle-icon">
+                    <img src="img/line.svg" class="left-line">
+                    <img src="img/line.svg" class="right-line">
+                    <img src="img/line.svg" class="right-line">
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="jump-menu">
+            <ul>
+              <li><strong>Jump to: <div class="button toggle" onclick="jumpMenuOpen()">✖</div> </strong></li>
+              <li><a href="#top" class="button">Top</a></li>
+              <li><a href="#Project-Overview" class="button">Project Overview</a></li>
+              <li><a href="#Starting-Point" class="button">Starting Point</a></li>
+              <li><a href="#Colours-and-Fonts" class="button">Colours & Fonts</a></li>
+              <li><a href="#Layout-Changes" class="button">Editing the Template</a></li>
+              <li><a href="#Mobile-Compatibility" class="button">Mobile Compatibility</a></li>
+              <li><a href="#Final-Design-Changes" class="button">Final Design Changes</a></li>
+              <li><a href="#Live-Demo" class="button secondary"><i class="fa-solid fa-star"></i> Live Website</a>
+            </ul></li>
+          </div>
+
+      </div>
+    </header>
+
+    <!-- Start of Main /-->
+
+    <main id="top">
+      <div class="container">
+
+        <picture>
+          <source srcset="img/utr/header-sm.png" media="(max-width:767px)">
+          <img src="img/utr/header.png" alt="Under The Rosebed" class="borderless">
+        </picture>
+
+        <div id="Project Overview" class="area-header-link">
+          <h3>Project Overview</h3>
+          <p>As a long-time webcomic artist but someone slightly newer to web design, I’ve already made several websites for my comics. However, for this one, I really wanted to take the time to make sure it was distinctive and appropriately themed to the story. This website went through a lot of iteration before going live, as well as a few small updates after that as I learned more and become more confident in my design choices.</p>
+          <p>Under the Rosebed is a slice-of-life comic about three ghosts trying to raise an abandoned child; made up of short, stand-alone stories. Pages are a consistent size, and most of the stories are set in the catacombs, or at night - so I knew I wanted a darker overall theme and colours that would compliment the pages.</p>
+          <p>The comic is hosted on comicfury, a free platform that offers full customization while handling things like organizing the comics, chapters, and comments itself, making it a very convenient platform.</p>
+        </div>
+
+        <hr>
+
+        <picture>
+            <source srcset="img/utr/ipad-mockup-sm.png" media="(max-width:767px)">
+            <img src="img/utr/ipad-mockup.png" alt="comicfury default, archive page">
+        </picture>
+
+        <hr>
+
+        <div id="Starting-Point" class="area-header-link">
+          <h3>Starting Point: Comicfury and the template</h3>
+
+          <p>Comicfury allows full HTML and CSS customization, along with importing any assets and additional code you’d like.</p>
+
+          <p>For this website, I chose to start with one of their templates, to be sure that my website included all the necessary pages and functions. This layout is called  “Once I was a King”, and I started with this one mainly because I like the menu style and comic display.</p>
+          <p>It is common practice to start with a site’s mobile design; however, the larger, full-size view of comic pages is more important here, so I chose to start with the desktop layout and move from there.</p>
+
+          <picture>
+            <source srcset="img/utr/layoutexample2-sm.png" media="(max-width:767px)">
+            <img src="img/utr/layoutexample2.png" alt="comicfury default, home page">
+          </picture>
+
+          <picture>
+            <source srcset="img/utr/layoutexample3-sm.png" media="(max-width:767px)">
+            <img src="img/utr/layoutexample3.png" alt="comicfury default, blog page">
+          </picture>
+
+          <picture>
+            <source srcset="img/utr/layoutexample1-sm.png" media="(max-width:767px)">
+            <img src="img/utr/layoutexample1.png" alt="comicfury default, archive page">
+          </picture>
+
+        </div>
+
+        <hr>
+
+        <div id="Colours-and-Fonts" class="area-header-link">
+
+          <h3>Colours & Fonts</h3>
+
+          <h4>Light Mode</h4>
+          <div class="colour-palette">
+            <ul class="swatches">
+              <li>
+                <div class="swatch" style="background: #03030F; border-color:#E2E6F2;"></div>
+                <span>Background</span>
+                <span>#03030F</span>
+              </li>
+              <li>
+                <div class="swatch" style="background: #232545;"></div>
+                <span>Header BGs</span>
+                <span>#232545</span>
+              </li>
+              <li>
+                <div class="swatch" style="background: #839BE0;"></div>
+                <span>Links</span>
+                <span>#839BE0</span>
+              </li>
+              <li>
+                <div class="swatch" style="background: #D0D7EB;"></div>
+                <span>Text BGs</span>
+                <span>#D0D7EB</span>
+              </li>
+              <li>
+                <div class="swatch" style="background: #E2E6F2;"></div>
+                <span>Floating Text</span>
+                <span>#E2E6F2</span>
+              </li>
+              <li>
+                <div class="swatch" style="background: #DBEBFE;"></div>
+                <span>Site Title</span>
+                <span>#DBEBFE</span>
+              </li>
+            </ul>
+          </div>
+
+          <h4>Dark Mode</h4>
+          <div class="colour-palette">
+            <ul class="swatches">
+              <li>
+                <div class="swatch" style="background: #03030F"></div>
+                <span>Background</span>
+                <span>#03030F</span>
+              </li>
+              <li>
+                <div class="swatch" style="background: #1A1C34;"></div>
+                <span>Header BGs</span>
+                <span>#1A1C34</span>
+              </li>
+              <li>
+                <div class="swatch" style="background: #A7B5E1;"></div>
+                <span>Links</span>
+                <span>#A7B5E1</span>
+              </li>
+              <li>
+                <div class="swatch" style="background: #31334A;"></div>
+                <span>Text BGs</span>
+                <span>#31334A</span>
+              </li>
+              <li>
+                <div class="swatch" style="background: #E2E6F2;"></div>
+                <span>Text</span>
+                <span>#E2E6F2</span>
+              </li>
+              <li>
+                <div class="swatch" style="background: #DBEBFE;"></div>
+                <span>Site Title</span>
+                <span>#9AB0EF</span>
+              </li>
+            </ul>
+          </div>
+
+          <p>The actual colour palettes are very similar, with the dark theme simply having slightly less saturated colours and lower contrast. However; in practice, the inverted text containers make a big difference in perceived brightness, and make reading on a dark screen easier.</p>
+
+          <picture style="width: 100%;">
+            <source srcset="img/utr/comment-lightmode-sm.png" media="(max-width:767px)">
+            <img src="img/utr/comment-lightmode.png" alt="light mode comment example" style="max-width: 815px;" class="borderless">
+          </picture>
+
+          <picture style="width: 100%;">
+            <source srcset="img/utr/comment-darkmode-sm.png" media="(max-width:767px)">
+            <img src="img/utr/comment-darkmode.png" alt="dark mode comment example" style="max-width: 815px;" class="borderless">
+          </picture>
+
+          <h4>Typography</h4>
+
+          <ul id="typography-utr">
+            <li><h1>Title (Protest Revolution)</h1></li>
+            <li><h2>Headers (Comfortaa Medium)</h2></li>
+            <li><h3>Menu Items (Grenze Gotisch)</h3></li>
+            <li>Body - lorem ipsum (Saria)</li>
+          </ul>
+
+          <p>I did a lot of wavering on fonts, especially for the menu items, but I feel the ones I chose capture the correct atmosphere and feel while also being very easy to read.</p>
+
+          <p>Grenze Gotisch is very decorative, but the gothic, castle-y feel is appropriate, and as the menu items are large and don’t change, it isn’t too difficult to read.</p>
+
+          <p>Saira is an excellent body font, with great readability and a huge variety of weights to choose from. The slightly squared shape all the letters have adds a noticeable character to it, and sets it apart from many other body font options.</p>
+        </div>
+
+        <hr>
+
+        <div id="Layout-Changes" class="area-header-link">
+          <h3>Layout Changes & Editing the Template</h3>
+
+          <h4>The Overview Page</h4>
+
+          For all my comic sites, I like to have a most recent page preview on the landing overview page, rather than having the entire latest page, as is comicfury’s default.
+
+          <div class="responsive flex-container">
+            <picture>
+              <source srcset="img/utr/main-template-sm.png" media="(max-width:767px)">
+              <img src="img/utr/main-template.png" alt="comicfury default, home page">
+            </picture>
+
+            <picture>
+              <source srcset="img/utr/main-darkmode-sm.png" media="(max-width:767px)">
+              <img src="img/utr/main-darkmode.png" alt="utr site, home page">
+            </picture>
+          </div>
+
+          <p>Since this comic has short stories, I also wanted an option for users to go directly to the current story’s chapter in the archive. The two preview buttons are in a flexbox together, and stack vertically once the page is narrow enough. On hover, the gradient fades and they expand to double height, allowing the user a clearer preview.</p>
+
+          <h4>The Archive</h4>
+          <p>The default archive style is a list of comic titles, dates, and comment counts. Because all comic pages are a uniform size, I really wanted to instead have chapters be a set of thumbnails.</p>
+
+          <picture>
+              <source srcset="img/utr/archive-template-sm.png" media="(max-width:767px)">
+              <img src="img/utr/archive-template.png" alt="utr site, archive">
+          </picture>
+
+          <picture>
+              <source srcset="img/utr/archive-sm.png" media="(max-width:767px)">
+              <img src="img/utr/archive.png" alt="utr site, archive">
+          </picture>
+
+          <p>In order to make this work properly on all screen sizes, without any big gaps, I went through several HTML/CSS solutions before settling on one I liked best: responsive breakpoints that adjust the percentage width of all divs within the parent container. This way, the comic thumbnails always nicely fill the page while also being allowed to wrap, and I don’t have to do any adjusting as new pages are added.</p>
+
+          <h4>Comic Display</h4>
+          <p>The default comic display of this template was built very nicely, but I wanted to have something a bit more stylistic. My first change was to include arrows both above and below the comic image (which makes skipping through pages much easier). </p>
+
+          <div class="responsive flex-container">
+            <picture>
+              <source srcset="img/utr/mobile-default-sm.png" media="(max-width:767px)">
+              <img src="img/utr/mobile-default.png" alt="comicfury default, comic display">
+            </picture>
+
+            <picture>
+              <source srcset="img/utr/mobile-comic-sm.png" media="(max-width:767px)">
+              <img src="img/utr/mobile-comic.png" alt="utr site, comic display">
+            </picture>
+          </div>
+
+          <p>Next, I incorporated the navigation into the comic image display itself. Wrapping the nav around the comic made the image display feel more cohesive, and rounding the corners on the nav but not the image itself helps keep with the page’s overall rounded styling while not rounding the corners on the art itself.</p>
+
+          <p>A functional change I made was navigation oriented as well - by default, clicking the comic image takes you to the next page. I set up a pair ot buttons so that instead, clicking the left side of the page takes you to the previous one, and the right side takes you to the next.</p>
+
+          <p>Additionally, the central rose icon navigates back to the archive for convenience, although it is primarily decorative.</p>
+
+          <h4>Comment Sections</h4>
+          <p>Comicfury’s native comment system is excellent; very easy to use and manage. However, it does come with some restrictions, and a few layout decisions I’ve never liked.</p>
+
+          <div class="responsive flex-container">
+            <picture style="width:auto;">
+              <source srcset="img/utr/comment-section-default-sm.png" media="(max-width:767px)">
+              <img src="img/utr/comment-section-default.png" alt="comicfury default, comment section">
+            </picture>
+
+            <picture  style="width:auto;">
+              <source srcset="img/utr/comment-section-sm.png" media="(max-width:767px)">
+              <img src="img/utr/comment-section.png" alt="utr site, comment section">
+            </picture>
+          </div>
+
+          <p>The most prominent and immediate change I always make to my comment sections is moving the comment box. By default, it’s placed above all comments - this makes sense, as it should be easy to find. However; I’ve always felt it makes the most sense to have after the comments.</p>
+
+          <p>The way UtR’s website is designed, the box is beneath the comments, at the bottom. If there are more than three user comments, a button appears right beneath the author note that users can click to jump directly to the box. This means that it’s always easy to access the comment box, but it also doesn’t interfere with reading user comments.</p>
+
+          <p>Another change I had to make - comicfury’s comment box is actually an iframe, and can only be styled manually from your manage comic page. This means you get one set of colours for it.</p>
+
+          <p>But, this was an issue for me, as the reply box is nested into my comments, and the box would not match their colour. I resolved this using CSS filter, to keep a cohesive look. The default text box is on the left, and the filtered one on the right.</p>
+
+          <div class="responsive flex-container">
+            <picture style="width:auto;">
+              <source srcset="img/utr/comment-default-sm.png" media="(max-width:767px)">
+              <img src="img/utr/comment-default.png" alt="comicfury default, comment section" class="borderless">
+            </picture>
+
+            <picture  style="width:auto;">
+              <source srcset="img/utr/comment-filter-sm.png" media="(max-width:767px)">
+              <img src="img/utr/comment-filter.png" alt="utr site, comment section" class="borderless">
+            </picture>
+          </div>
+
+        </div>
+
+        <hr>
+
+        <picture>
+          <source srcset="img/utr/mockup-laptop-phone-sm.png" media="(max-width:767px)">
+          <img src="img/utr/mockup-laptop-phone.png" alt="UtR mockup, with latop and phone">
+        </picture>
+
+        <hr>
+
+        <div id="Mobile-Compatibility" class="area-header-link">
+          <h3>Mobile Compatibility</h3>
+          <p>Most comicfury templates don’t come with mobile compatibility, instead relying on comicfury’s default scroll view layout.</p>
+
+          <p>Responsive design is important to me, so I built the entire design to ensure it looks great on any screen, and made modifications to the template and CSS accordingly.</p>
+
+          <div class="mockup-wrapper-desktop">
+            <picture>
+              <source srcset="img/utr/phone-mockup-sm.png" media="(max-width:767px)">
+              <img src="img/utr/phone-mockup.png" alt="UtR phone mockup" style="max-width: 16vw; min-width: 200px">
+            </picture>
+
+            <picture>
+              <source srcset="img/utr/flat-ipad-mockup-sm.png" media="(max-width:767px)">
+              <img src="img/utr/flat-ipad-mockup.png" alt="UtR tablet mockup" style="max-width: 46vw;">
+            </picture>
+
+            <picture>
+              <source srcset="img/utr/macbook-mockup-sm.png" media="(max-width:767px)">
+              <img src="img/utr/macbook-mockup.png" alt="UtR laptop mockup">
+            </picture>
+
+            <picture>
+              <source srcset="img/utr/imac-mockup-sm.png" media="(max-width:767px)">
+              <img src="img/utr/imac-mockup.png" alt="UtR desktop mockup">
+            </picture>
+          </div>
+
+          <h4>Header & Menu</h4>
+
+          <p>The header and menu has a couple of different versions, based on screen size.</p>
+          <p>On XL screens, the header area has a set width, as it spanning the full screen looked out of place when the comic pages and other content did not. On most laptops, it should span the entire screen.</p>
+
+          <picture>
+            <source srcset="img/utr/small-header-sm.png" media="(max-width:767px)">
+            <img src="img/utr/small-header.png" alt="UtR header, on XL screens">
+          </picture>
+
+          <p>On smaller tablets, the small character icon is hidden to conserve space.</p>
+
+          <picture>
+            <source srcset="img/utr/ipad-header-sm.png" media="(max-width:767px)">
+            <img src="img/utr/ipad-header.png" alt="UtR header, on tablet screens">
+          </picture>
+
+          <p>And on phones, the title is compressed, and the menu is collapsed into a hamburger.</p>
+
+          <picture>
+            <source srcset="img/utr/mobile-header-sm.png" media="(max-width:767px)">
+            <img src="img/utr/mobile-header.png" alt="UtR header, on mobile screens">
+          </picture>
+
+          <h4>Archive</h4>
+
+          <p>The thumbnail archive is something that was very important to me, and as mentioned, is responsive - however, on very small screens such a s phones, it quickly becomes cumbersome. On tablets, I chose to keep the thumbnails, but on phones, the archive switches to a more easy to navigate and efficient text based list.</p>
+
+          <div class="responsive flex-container">
+              <picture style="width:auto;">
+                <source srcset="img/utr/mobile-archive-sm.png" media="(max-width:767px)">
+                <img src="img/utr/mobile-archive.png" alt="tablet archive, with thumbnails">
+              </picture>
+
+              <picture  style="width:auto;">
+                <source srcset="img/utr/mobile-sm-archive-sm.png" media="(max-width:767px)">
+                <img src="img/utr/mobile-sm-archive.png" alt="mobile archive, in a text list format">
+              </picture>
+          </div>
+
+          <h4>Cast Page</h4>
+
+          <p>On desktop, the cast pages have a large image to the left, and content to the right. On smaller screens, they’re changed to stack vertically, with a banner style image the responsively shrinks horizontally to a square on mobile, and then scales down uniformly based on screen size.</p>
+
+          <div class="flex-container responsive wrap">
+              <picture>
+                <source srcset="img/utr/cast-desktop-sm.png" media="(max-width:767px)">
+                <img src="img/utr/cast-desktop.png" alt="UtR cast page, desktop">
+              </picture>
+
+              <picture>
+                <source srcset="img/utr/cast-tablet-sm.png" media="(max-width:767px)">
+                <img src="img/utr/cast-tablet.png" alt="UtR cast page, tablet">
+              </picture>
+
+              <picture>
+                <source srcset="img/utr/cast-mobile-sm.png" media="(max-width:767px)">
+                <img src="img/utr/cast-mobile.png" alt="UtR cast page, mobile">
+              </picture>
+          </div>
+
+        </div>
+
+        <hr>
+
+        <picture>
+          <source srcset="img/utr/desktop-mac-sm.png" media="(max-width:767px)">
+          <img src="img/utr/desktop-mac.png" alt="UtR desktop mockup, on wooden desk in bright room">
+        </picture>
+
+        <hr>
+
+        <div id="Final-Design-Changes" class="area-header-link">
+          <h3>Final Design Changes</h3>
+
+          <p>By this point, the website was mostly completed. I actually had it live like this for a while, but decided that the all black header had a sort of overpowering, heavy feeling. I wanted to incorporate the titular roses somehow, and add a bit more diversity to the site themes, so I decided to try out a graphic header.</p>
+
+          <picture>
+            <source srcset="img/utr/dark-header-sm.png" media="(max-width:767px)">
+            <img src="img/utr/dark-header.png" alt="UtR's original, solid black header">
+          </picture>
+
+          <picture>
+            <source srcset="img/utr/main-darkmode-sm.png" media="(max-width:767px)">
+            <img src="img/utr/main-darkmode.png" alt="UtR's original, solid black header">
+          </picture>
+
+          <picture>
+            <source srcset="img/utr/main-lightmode-sm.png" media="(max-width:767px)">
+            <img src="img/utr/main-lightmode.png" alt="UtR's original, solid black header">
+          </picture>
+
+          <p>I feel the day and night skies really enhance the light and dark mode, allowing users to have a little more colour while still keeping the overall dark palette of the site.</p>
+        </div>
+
+        <div id="Live-Demo" class="area-header-link">
+          <h3>Live Demo</h3>
+
+          <p>This website is live, and the comic currently updates twice a week. Check it out <a href="https://undertherosebed.thecomicseries.com/" taregt="_blank">here</a>, or click around the iframe version below! You may see additional features on this version, such as page transcripts.</p>
+
+          <div class="iframe-wrap">
+            <iframe src="https://undertherosebed.thecomicseries.com/" title="This is the live version of the UtR site!">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- End of Main /-->
+
+    <footer id="contact">
+      <div class="container">
+        <ul class="socials">
+          <li><a href="https://www.deviantart.com/flyteck" class="social-link deviantart" target="_blank"><i class="fa-brands fa-deviantart"></i></a></li>
+          <li><a href="https://www.behance.net/zoeamaral" class="social-link behance" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
+          <li><a href="linkedin" class="social-link linkeden" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="twitter" class="social-link twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+        <p class="copyright">
+          Copyright Zoe Amaral 2024
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/project-js.js"></script>
+  </body>
+</html>

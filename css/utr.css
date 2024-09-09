@@ -1,0 +1,82 @@
+body {
+  background: #03030F;
+}
+
+h3 {
+  font-family: "Grenze Gotisch", sans-serif;
+  font-size: 1.8em;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background: linear-gradient(90deg, #232446 0%, rgba(51,72,75,0) 100%);
+}
+
+a {
+  color:#A7B5E1;
+}
+
+a:hover, a:focus, a:active {
+  color: #91c9ff;
+}
+
+#utr .container {
+  font-family: "Saira";
+  color: #E2E6F2;
+  font-size: 16px;
+}
+
+#utr .container img:not(.borderless) {
+  border: 1px solid #A7B5E150;
+}
+
+[class*="mockup-wrapper"] picture {
+    filter: drop-shadow(2px 2px 2px #1a1b35) drop-shadow(12px 12px 10px #1a1b35);
+}
+
+[class*="mockup-wrapper"] picture img {
+  border: none!important;
+}
+
+.container .area-header-link {
+  background: #31334A;
+  padding: 20px calc(10px + 2.5vw);
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+#typography-utr li {
+  margin: 0;
+  display: flex;
+  align-items: center;
+} 
+
+#typography-utr h1 {
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+
+#typography-utr h2 {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 0;
+}
+
+#typography-utr h3 {
+  font-family: "Grenze Gotisch", sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0;
+}
+
+#typography-utr {
+  font-family: "Saira", serif;
+  font-weight: 400;
+}
+
+.swatch {
+  border-color:#E2E6F2;
+}
