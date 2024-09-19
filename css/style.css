@@ -46,6 +46,10 @@ body {
   animation: 1000ms fade-in;
 }
 
+footer {
+  background: #FFF8F0;
+}
+
 main {
   padding-top: 115px;
   overflow: hidden;
@@ -591,6 +595,23 @@ body.project-page #navigation {
 [class*="mockup-wrapper"] picture {
   margin: 10px;
   filter: drop-shadow(2px 2px 2px #5a3c2162) drop-shadow(12px 12px 10px #5a3c2192);
+}
+
+.small-flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-flex-wrapper img {
+  flex: 1 1 50%;
+  max-width: 200px;
+}
+
+.project-page .small-flex-wrapper picture {
+  margin: 0 10px;
 }
 
 #jump-menu {

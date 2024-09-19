@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">    
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Zoe Amaral">
+    <meta name="description" content="This is the project page for Cat Tracks">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/cattracks.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="img/logofav.png" rel="shortcut icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Quicksand:wght@300..700&family=Fredericka+the+Great" rel="stylesheet">
+
+
+    <title>Portfolio (Zoe Amaral) - Cat Tracks Case Study</title>
+
+    <style>
+      img {
+        max-width: 100%;
+      }
+    </style>
+
+  </head>
+  <body id="cat-tracks" class="project-page">
+    <header>
+      <div id="navigation" class="area-header-link">
+
+        <div class="navtoggle" id="myNavtoggle">
+          <div class="icon-row">
+            <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+            <div class="flex-column">
+              <a href="about.html">Zoe Amaral</a>
+              <a href="work.html" class="subtitle">UI/UX/FED</a>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="work.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="menu-icon">
+                <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                  <div id="navtoggle-icon">
+                    <img src="img/line.svg" class="left-line">
+                    <img src="img/line.svg" class="right-line">
+                    <img src="img/line.svg" class="right-line">
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="jump-menu">
+            <ul>
+              <li><strong>Jump to: <div class="button toggle" onclick="jumpMenuOpen()">✖</div> </strong></li>
+              <li><a href="#top" class="button">Top</a></li>
+              <li><a href="#Project-Overview" class="button">Project Overview</a></li>
+              <li><a href="#Initial-Approach" class="button">Initial Approach</a></li>
+              <li><a href="#Colours-and-Fonts" class="button">Colours & Fonts</a></li>
+              <li><a href="#High-Fidelity" class="button">High Fidelity Screens</a></li>
+              <li><a href="#Challenges-and-Solutions" class="button">Challenges & Solutions</a></li>
+              <li><a href="#Final-Showcase" class="button">Final Showcase</a></li>
+              <li><a href="#Conclusion" class="button">Conclusion</a></li>
+              <li><a href="https://www.figma.com/proto/Q1W3pZnXOUO3SwzbuIroCF/CatApp-(Good-Protoype)?type=design&node-id=183-7302&t=yxAHwPgrH1UyHvJS-1&scaling=min-zoom&page-id=183%3A4843&starting-point-node-id=183%3A7302&show-proto-sidebar=1&mode=design" target="_blank" class="button secondary"><i class="fa-solid fa-star"></i> Figma Prototypes</a>
+            </ul></li>
+          </div>
+
+      </div>
+    </header>
+
+    <!-- Start of Main /-->
+
+    <main id="top">
+      <div class="container">
+
+        <picture>
+          <source srcset="img/cattracks/title-sm.png" media="(max-width:767px)">
+          <img src="img/cattracks/title.png" alt="Cat Tracks" class="borderless">
+        </picture>
+
+        <div id="Project-Overview" class="area-header-link">
+          <h3>Project Overview & Details</h3>
+          <p>Cat Tracks is an app inspired by the walks I used to go on with my old roommate, where we’d look for local cats in the area. Over time, we got to know where a lot of them lived. I thought an app based around taking cute cat photos and walking would be a fun way to share this experience with others, while encouraging users to get more activity.</p>
+          <p>The brief was fairly open-ended, so I chose something I thought would be engaging and unique to work on for this project. My goal was to create a friendly, easy-to-use app that allows users to learn about, and locate their local cats. Additionally, I had to keep user security in mind while designing the app.</p>
+
+          <h4>Project Details</h4>
+          <strong>Tools</strong>
+            <ul>
+              <li>Figma</li>
+            </ul>
+          <p><strong>Timeframe:</strong> ~3 months</p>
+        </div>
+
+        <hr>
+
+        <picture>
+            <source srcset="img/cattracks/mockup-grass-sm.png" media="(max-width:767px)">
+            <img src="img/cattracks/mockup-grass.png" alt="comicfury default, archive page">
+        </picture>
+
+        <hr>
+
+        <div id="Initial-Approach" class="area-header-link">
+          <h3>Initial Approach</h3>
+
+          <p>I started with rough wire frames, and moved through to higher fidelity, getting user feedback along the way to ensure users were able to navigate and interact comfortably with the app. I did a very loose home screen in figma to start, as I find this helps me visualize what I want best, and then moved into wireframes for the rest of the app.</p>
+
+          <div class="responsive flex-container">
+            <picture>
+              <source srcset="img/cattracks/concept-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/concept.png" alt="cat tracks initial concept">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/thumbnails-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/thumbnails.png" alt="initial layout thumbnails">
+            </picture>
+          </div>
+
+          <p>After wireframes and user flows, I moved into my first pass at low-mid fidelity frames in Figma, which is where I work out most of the kinks in layout and figure out things like scale and proportion, as well as fonts. I like to do this early on to make sure the app has the feeling I’m looking for.</p>
+
+          <div class="responsive flex-container">
+            <picture>
+              <source srcset="img/cattracks/landing-mid-ios-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/landing-mid-ios.png" alt="cat tracks landing page, mid fideltiy (ios)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/cats-mid-ios-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/cats-mid-ios.png" alt="cat tracks cats page, mid fideltiy (ios)">
+            </picture>
+          </div>
+
+          <p>Here’s a couple of the screens at full size, as well as all of them at a small size.</p>
+
+          <div class="small-flex-wrapper">
+            <picture>
+              <source srcset="img/cattracks/landing-mid-ios-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/landing-mid-ios.png" alt="cat tracks landing screen, mid-fidelity (ios)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/register-mid-ios-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/register-mid-ios.png" alt="cat tracks registration screen, mid-fidelity (ios)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/map-mid-ios-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/map-mid-ios.png" alt="cat tracks maps screen, mid-fidelity (ios)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/cat-mid-ios-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/cat-mid-ios.png" alt="cat tracks cat screen, mid-fidelity (ios)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/cats-mid-ios-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/cats-mid-ios.png" alt="cat tracks browse cats screen, mid-fidelity (ios)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/favs-mid-ios-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/favs-mid-ios.png" alt="cat tracks favourite cats, mid-fidelity (ios)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/photos-mid-ios-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/photos-mid-ios.png" alt="cat tracks photos screen, mid-fidelity (ios)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/walks-mid-ios-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/walks-mid-ios.png" alt="cat tracks walks screen, mid-fidelity (ios)">
+            </picture>
+          </div>
+
+          <div class="small-flex-wrapper">
+            <picture>
+              <source srcset="img/cattracks/landing-mid-android-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/landing-mid-android.png" alt="cat tracks landing screen, mid-fidelity (android)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/register-mid-android-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/register-mid-android.png" alt="cat tracks registration screen, mid-fidelity (android)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/map-mid-android-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/map-mid-android.png" alt="cat tracks maps screen, mid-fidelity (android)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/cat-mid-android-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/cat-mid-android.png" alt="cat tracks cat screen, mid-fidelity (android)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/cats-mid-android-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/cats-mid-android.png" alt="cat tracks browse cats screen, mid-fidelity (android)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/favs-mid-android-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/favs-mid-android.png" alt="cat tracks favourite cats, mid-fidelity (android)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/photos-mid-android-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/photos-mid-android.png" alt="cat tracks photos screen, mid-fidelity (android)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/walks-mid-android-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/walks-mid-android.png" alt="cat tracks walks screen, mid-fidelity (android)">
+            </picture>
+          </div>
+
+        </div>
+
+        <hr>
+
+        <div id="Colours-and-Fonts" class="area-header-link">
+
+          <h3>Colours & Fonts</h3>
+
+          <div class="colour-palette">
+            <ul class="swatches">
+              <li>
+                <div class="swatch" style="background: #B6EC72"></div>
+                <span>Active/Accent</span>
+                <span>#B6EC72</span>
+              </li>
+              <li>
+                <div class="swatch" style="background: #052B26;"></div>
+                <span>Headers & BGs</span>
+                <span>#052B26</span>
+              </li>
+              <li>
+                <div class="swatch" style="background: #FFFDF7; border: 1px solid #052B26"></div>
+                <span>BGs & Text Areas</span>
+                <span>#FFFDF7</span>
+              </li>
+              <li>
+                <div class="swatch" style="background: #07667B;"></div>
+                <span>Subtitles</span>
+                <span>#07667B</span>
+              </li>
+              <li>
+                <div class="swatch" style="background: #E51D7D;"></div>
+                <span>Secondary Accent</span>
+                <span>#E51D7D</span>
+              </li>
+            </ul>
+          </div>
+
+          <h4>Typography</h4>
+
+          <ul id="typography-cat-tracks">
+            <li><h1>Title (Jua)</h1></li>
+            <li><h2>Headers (Fredoka - Semibold)</h2></li>
+            <li>Body (Fredoka)</li>
+          </ul>
+
+          <p>I kept the typograhpy for the app rather simple, using varying weights, sizes, and colours of Fredoka for all text. It's a friendly, highly ledgible font that adds a lot of character, and has a wide variety of weights.</p>
+          <p>The app's title is in Jua, which is a similar font with a bit more energy and playfullness. It has too much character to be a body font, but plays well with Fredoka.</p>
+        </div>
+
+        <hr>
+
+        <div id="High-Fidelity" class="area-header-link">
+          <h3>High Fidelity Screens</h3>
+
+          <p>After I settled on the palette, I moved into applying colour and detailing the layout further. Below are some of the IOS screens, before I conducted user research and made final modifications. </p>
+
+          <div class="responsive flex-container wrap">
+            <picture>
+              <source srcset="img/cattracks/landing-high-ios-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/landing-high-ios.png" alt="cat tracks landing screen, high-fidelity (ios)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/register-high-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/register-high.png" alt="cat tracks registration screen, high-fidelity (ios)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/map-high-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/map-2-high.png" alt="cat tracks maps screen, high-fidelity (ios)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/map-high-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/map-high.png" alt="cat tracks maps screen, high-fidelity (ios)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/cat-high-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/cat-high.png" alt="cat tracks cat screen, high-fidelity (ios)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/cats-high-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/cats-high.png" alt="cat tracks browse cats screen, high-fidelity (ios)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/favourites-high-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/favourites-high.png" alt="cat tracks maps, high-fidelity (ios)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/photos-high-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/photos-high.png" alt="cat tracks photos screen, high-fidelity (ios)">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/walks-high-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/walks-high.png" alt="cat tracks walks screen, high-fidelity (ios)">
+            </picture>
+          </div>
+
+        </div>
+
+        <hr>
+
+        <div id="Challenges-and-Solutions" class="area-header-link">
+          <h3>Challenges & Solutions</h3>
+
+          <p>The most challenging part of this app was definitely prototyping. There were several functions I was unsure how to recreate, the large number of screens became overwhelming rather quickly.</p>
+          <p>This was resolved with time and experimentation, and I’m confident my next large and complicated prototype will go smoother.</p>
+          <p>Additionally, I had some issues deciding how to re-organize the menu options after user testing. There were too few to have a satisfying hamburger menu without hiding needed info, but too many to easily place.</p>
+          <p>I believe the final option I decided on considered user feedback while keeping the main functions of the app functional - user menu items within user preferences under the user icon, and the map icon next to the walk button to help prevent confusion between the two.</p>
+          
+        </div>
+
+        <hr>
+
+        <div id="Final-Showcase" class="area-header-link">
+          <h3>Final Showcase</h3>
+
+          <p>The final product came together quite well as a whole! With more time, I’d like to polish things further - but as a MVP and first version, I think it’s captured the desired friendly look well while keeping the main functions of viewing cats and logging walks clear and simple.</p>
+
+          <p>For a better look at all screens, check out the working figma prototypes at the end of the case study!</p>
+
+          <picture>
+            <source srcset="img/cattracks/mockup-1-sm.png" media="(max-width:767px)">
+            <img src="img/cattracks/mockup-1.png" alt="cat tracks mobile mockup, landing screen">
+          </picture>
+
+          <div class="mockup-wrapper-mobile">
+            <picture>
+              <source srcset="img/cattracks/iphone-mockup-11-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/iphone-mockup-11.png" alt="cat tracks mobile mockup, map screen">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/iphone-mockup-1-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/iphone-mockup-1.png" alt="cattracks tablet mockup">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/iphone-mockup-9-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/iphone-mockup-9.png" alt="cattracks tablet mockup">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/iphone-mockup-2-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/iphone-mockup-2.png" alt="cattracks tablet mockup">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/iphone-mockup-4-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/iphone-mockup-4.png" alt="cattracks tablet mockup">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/iphone-mockup-5-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/iphone-mockup-5.png" alt="cattracks tablet mockup">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/iphone-mockup-3-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/iphone-mockup-3.png" alt="cattracks tablet mockup">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/iphone-mockup-7-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/iphone-mockup-7.png" alt="cattracks tablet mockup">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/iphone-mockup-8-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/iphone-mockup-8.png" alt="cattracks tablet mockup">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/iphone-mockup-6-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/iphone-mockup-6.png" alt="cattracks tablet mockup">
+            </picture>
+
+            <picture>
+              <source srcset="img/cattracks/iphone-mockup-10-sm.png" media="(max-width:767px)">
+              <img src="img/cattracks/iphone-mockup-10.png" alt="cattracks tablet mockup">
+            </picture>
+          </div>
+          
+        </div>
+
+        <hr>
+
+        <div id="Conclusion" class="area-header-link">
+          <h3>Conclusion</h3>
+
+          <p>This project went smoothly, resulting in a functional and unique website, perfectly tailored to the content hosted on it. I tested out some very basic javascript to enhance functionality, and spent more time creating smooth CSS transitions for things like buttons and menus to really polish the site as a whole.</p>
+
+          <p>There's nothing about the finished product that I'd do differently; however, I'd probably spend a bit more time re-organizing the template's base code to make the final code cleaner and more consistent. I will likely continue to make small quality of life and feature updgrades to the site as time goes on, to make the user experience even more comfortable.</p>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- End of Main /-->
+
+    <footer id="contact">
+      <div class="container">
+        <ul class="socials">
+          <li><a href="https://www.deviantart.com/flyteck" class="social-link deviantart" target="_blank"><i class="fa-brands fa-deviantart"></i></a></li>
+          <li><a href="https://www.behance.net/zoeamaral" class="social-link behance" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
+          <li><a href="linkedin" class="social-link linkeden" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="twitter" class="social-link twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+        <p class="copyright">
+          Copyright Zoe Amaral 2024
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/project-js.js"></script>
+  </body>
+</html>
