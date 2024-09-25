@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Kufam:ital,wght@0,400..900;1,400..900&family=Varela+Round&family=Zen+Maru+Gothic');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+
+body {
+  background: url("../img/aquire/fish-bg.png") fixed;
+}
+
+hr {
+  height: 2px;
+  border: none;
+  background: linear-gradient(90deg, #ffffff00 0%, #ffffff 50%, #ffffff00 100%);
+}
+
+a {
+  color:#A7B5E1;
+}
+
+a:hover, a:focus, a:active {
+  color: #91c9ff;
+}
+
+h4 {
+  font-family: "Varela Round";
+  font-size: 110%;
+}
+
+h2, h3 {
+  font-family: "Jura";
+  font-weight: bold;
+  font-size: 130%;
+}
+
+#aquire .container {
+  font-family: "Zen Maru Gothic";
+  font-weight: 400;
+}
+
+[class*="mockup-wrapper"] picture {
+    filter: drop-shadow(2px 2px 2px #817a76) drop-shadow(12px 12px 10px #a59f9b);
+}
+
+[class*="mockup-wrapper"] picture img {
+  border: none!important;
+}
+
+.container > div, .container > picture img {
+  border: 1px solid #1B603E;
+}
+
+.container .area-header-link {
+  background: #FFFFFF;
+  padding: 20px calc(10px + 2.5vw) calc(10px + 2.5vw);
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+#aquire .accent {
+  color: #d82400;
+}
+
+#typography-aquire li {
+  line-height: 40px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+} 
+
+#typography-aquire h1 {
+  font-family: "Kufam", sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+
+#typography-aquire h2 {
+  font-family: "Jura", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+#typography-aquire h3 {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+#typography-aquire {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 300;
+}
+
+.swatch {
+  border-color:#E2E6F2;
+}

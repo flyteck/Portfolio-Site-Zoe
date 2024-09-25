@@ -9,19 +9,9 @@ Accent 2 (Blue): #91c9ff;
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Akshar:wght@300..700');
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Kufam:ital,wght@0,400..900;1,400..900&family=Varela+Round&family=Zen+Maru+Gothic');
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Mate:ital@0;1&family=Teko:wght@300..700');
-@import url('https://fonts.googleapis.com/css2?family=Yatra+One');
-@import url('https://fonts.googleapis.com/css2?family=Sriracha');
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700');
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700');
 @import url('https://use.fontawesome.com/releases/v5.0.9/css/all.css');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Days+One&family=Protest+Revolution&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Rye&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap');
 
 * {
@@ -496,50 +486,11 @@ body.project-page #navigation {
   border-radius:4px
 }
 
-/******************** Typography for each project, and other project-specific styles ********************/
-
-/** Aquire **/
-
-#aquire .accent {
-  color: #d82400;
-}
-
-#typography-aquire li {
-  line-height: 40px;
-  margin: 0;
-  display: flex;
-  align-items: center;
-} 
-
-#typography-aquire h1 {
-  font-family: "Kufam", sans-serif;
-  font-weight: bold;
-  margin: 0;
-}
-
-#typography-aquire h2 {
-  font-family: "Jura", sans-serif;
-  font-weight: 400;
-  margin: 0;
-}
-
-#typography-aquire h3 {
-  font-family: "Varela Round", sans-serif;
-  font-weight: 400;
-  margin: 0;
-}
-
-#typography-aquire {
-  font-family: "Zen Maru Gothic", serif;
-  font-weight: 300;
-}
-
 
 /*********************** General Project Page **********************/
 
 .project-page picture {
   width: fit-content;
-  padding: 5px;
   margin: 0 auto;
   display: block;
 }
