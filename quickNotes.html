@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">    
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Zoe Amaral">
+    <meta name="description" content="This is the project page for Quick Notes">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/quickNotes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="img/logofav.png" rel="shortcut icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Quicksand:wght@300..700&family=Fredericka+the+Great" rel="stylesheet">
+
+
+    <title>Portfolio (Zoe Amaral) - Quick Notes Case Study</title>
+
+    <style>
+      img {
+        max-width: 100%;
+      }
+    </style>
+
+  </head>
+  <body id="quickNotes" class="project-page">
+    <header>
+      <div id="navigation" class="area-header-link">
+
+        <div class="navtoggle" id="myNavtoggle">
+          <div class="icon-row">
+            <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+            <div class="flex-column">
+              <a href="about.html">Zoe Amaral</a>
+              <a href="work.html" class="subtitle">UI/UX/FED</a>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="work.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="menu-icon">
+                <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                  <div id="navtoggle-icon">
+                    <img src="img/line.svg" class="left-line">
+                    <img src="img/line.svg" class="right-line">
+                    <img src="img/line.svg" class="right-line">
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div id="jump-menu">
+            <ul>
+              <li><strong>Jump to: <div class="button toggle" onclick="jumpMenuOpen()">✖</div> </strong></li>
+              <li><a href="#top" class="button">Top</a></li>
+              <li><a href="#Project-Overview" class="button">Project Overview</a></li>
+              <li><a href="#Design-Proccess" class="button">Design Proccess</a></li>
+              <li><a href="#Colours-and-Fonts" class="button">Colours & Fonts</a></li>
+              <li><a href="#Components" class="button">Components</a></li>
+              <li><a href="#Final-Screens" class="button">Final Screens</a></li>
+              <li><a href="#Conclusion" class="button">Conclusion</a></li>
+            </ul></li>
+          </div>
+
+      </div>
+    </header>
+
+    <!-- Start of Main /-->
+
+    <main id="top">
+      <div class="container">
+
+        <picture>
+          <source srcset="img/quickNotes/quickNotesThumbSM.jpg" media="(max-width:767px)">
+          <img src="img/quickNotes/quickNotesThumb.jpg" alt="Quick Notes" class="borderless">
+        </picture>
+
+        <div id="Project-Overview" class="area-header-link">
+          <h3>Project Overview & Details</h3>
+          <p>This app was a quick project, done with a limited brief and a within very short time frame. I completed it start to finish in about three hours between other projects.</p>
+          <p>For this app, I kept my focus on something minimalist but functional, designed to be comfortable and intuitive to use an functional but feature light.</p>
+
+          <h4>Project Details</h4>
+          <strong>Tools</strong>
+            <ul>
+              <li>Figma</li>
+            </ul>
+          <p><strong>Timeframe:</strong> ~3 hours, over a couple days</p>
+        </div>
+
+        <hr>
+
+        <picture>
+          <source srcset="img/quickNotes/quick-notes-mockup-sm.jpg" media="(max-width:767px)">
+          <img src="img/quickNotes/quick-notes-mockup.jpg" alt="mockup of man on plane using the app">
+        </picture>
+
+        <hr>
+
+        <div id="Design-Proccess" class="area-header-link">
+          <h3>Design Proccess</h3>
+
+          <p>Due to the simple nature of this app, I chose to start my proccess right in figma, working through a greyscale wireframe for the layout after looking at some other examples of notes apps. Note taking apps are fairly simplistic in terms of what they need to be functional - you really just need somewhere to write and view your notes.</p>
+          <p>I chose to a trash bin with recently deleted items to help prevent mishaps, and the ability to pin and archive notes to help with organization.</p>
+
+          <p>After I'd mocked up a simple, clean layout with all the needed functions and planned pages, I moved right into colours and fonts.</p>
+        </div>
+
+        <hr>
+
+        <div id="Colours-and-Fonts" class="area-header-link">
+
+          <h3>Colours & Fonts</h3>
+
+          <p>I chose a warm, earthy palette for this app, aiming to imitate the feeling of a cozy leather notebook. I chose red as a warning colour, to make things like deleting pop for ease of use.</p>
+
+          <div class="colour-palette">
+            <ul class="swatches">
+              <li>
+                <div class="swatch" style="background: #361F0A;"></div>
+                <span>Dark Chocolate</span>
+                <span>#361F0A</span>
+              </li>
+              <li>
+                <div class="swatch" style="background: #6B533C;"></div>
+                <span>Chocolate</span>
+                <span>#6B533C</span>
+              </li>
+              <li>
+                <div class="swatch" style="background: #BD915D;"></div>
+                <span>Caramel</span>
+                <span>#BD915D</span>
+              </li>
+              <li>
+                <div class="swatch" style="background: #D3CFC5;"></div>
+                <span>Grey</span>
+                <span>#D3CFC5</span>
+              </li>
+              <li>
+                <div class="swatch" style="background: #E7E2D8;"></div>
+                <span>Beige</span>
+                <span>#E7E2D8</span>
+              </li>
+              <li>
+                <div class="swatch" style="background: #FFFFFF;"></div>
+                <span>White</span>
+                <span>#FFFFFF</span>
+              </li>
+              <li>
+                <div class="swatch" style="background: #B7281F;"></div>
+                <span>Red</span>
+                <span>#B7281F</span>
+              </li>
+            </ul>
+          </div>
+
+          <h4>Typography</h4>
+
+          <ul id="typography-quickNotes">
+            <li><h1>Headers and Titles (Inknut Antiqua)</h1></li>
+            <li>Body (Anadada Pro)</li>
+          </ul>
+
+          <p>I continued with this theme for fonts, choosing something with personality for headers, and using a very simple, easy to read serif font for the body.</p>
+        </div>
+
+        <hr>
+
+        <div id="Components" class="area-header-link">
+          <h3>Components</h3>
+
+          <p>While working on this app, I wanted to make sure I was defining my colours and components for ease of editing, and for clarity. Each component has multiple states, making modiyfing colours, and protoyping, easy.</p>
+
+          <div class="small-flex-wrapper">
+            <picture>
+              <source srcset="img/quickNotes/component-tools.png" media="(max-width:767px)">
+              <img src="img/quickNotes/component-tools.png" alt="phone mockup" style="max-width: 500px;">
+            </picture>
+
+            <picture>
+              <source srcset="img/quickNotes/component-menu.png" media="(max-width:767px)">
+              <img src="img/quickNotes/component-menu.png" alt="phone mockup" style="max-width: 234px;">
+            </picture>
+
+            <picture>
+              <source srcset="img/quickNotes/component-note-menu.png" media="(max-width:767px)">
+              <img src="img/quickNotes/component-note-menu.png" alt="phone mockup" style="max-width: 890px;">
+            </picture>
+
+            <picture>
+              <source srcset="img/quickNotes/component-date.png" media="(max-width:767px)">
+              <img src="img/quickNotes/component-date.png" alt="phone mockup" style="max-width: 500px;">
+            </picture>
+
+            <picture>
+              <source srcset="img/quickNotes/component-search.png" media="(max-width:767px)">
+              <img src="img/quickNotes/component-search.png" alt="phone mockup" style="max-width: 500px;">
+            </picture>
+
+            <picture>
+              <source srcset="img/quickNotes/component-button.png" media="(max-width:767px)">
+              <img src="img/quickNotes/component-button.png" alt="phone mockup" style="max-width: 80px;">
+            </picture>
+
+            <picture>
+              <source srcset="img/quickNotes/component-edit-buttons.png" media="(max-width:767px)">
+              <img src="img/quickNotes/component-edit-buttons.png" alt="phone mockup" style="max-width: 240px;">
+            </picture>
+          </div>
+        </div>
+
+        <hr>
+
+        <div id="Final-Screens" class="area-header-link">
+          <h3>Final Screens</h3>
+
+          <div class="mockup-wrapper-mobile">
+            <picture>
+              <source srcset="img/quickNotes/iphone-mockup-1-sm.png" media="(max-width:767px)">
+              <img src="img/quickNotes/iphone-mockup-1.png" alt="phone mockup" style="max-width: 16vw; min-width: 200px">
+            </picture>
+
+            <picture>
+              <source srcset="img/quickNotes/iphone-mockup-2-sm.png" media="(max-width:767px)">
+              <img src="img/quickNotes/iphone-mockup-2.png" alt="phone mockup" style="max-width: 16vw; min-width: 200px">
+            </picture>
+
+            <picture>
+              <source srcset="img/quickNotes/iphone-mockup-3-sm.png" media="(max-width:767px)">
+              <img src="img/quickNotes/iphone-mockup-3.png" alt="phone mockup" style="max-width: 16vw; min-width: 200px">
+            </picture>
+
+            <picture>
+              <source srcset="img/quickNotes/iphone-mockup-4-sm.png" media="(max-width:767px)">
+              <img src="img/quickNotes/iphone-mockup-4.png" alt="phone mockup" style="max-width: 16vw; min-width: 200px">
+            </picture>
+
+            <picture>
+              <source srcset="img/quickNotes/iphone-mockup-5-sm.png" media="(max-width:767px)">
+              <img src="img/quickNotes/iphone-mockup-5.png" alt="phone mockup" style="max-width: 16vw; min-width: 200px">
+            </picture>
+
+            <picture>
+              <source srcset="img/quickNotes/iphone-mockup-6-sm.png" media="(max-width:767px)">
+              <img src="img/quickNotes/iphone-mockup-6.png" alt="phone mockup" style="max-width: 16vw; min-width: 200px">
+            </picture>
+          </div>
+
+        </div>
+
+        <hr>
+
+        <div id="Conclusion" class="area-header-link">
+          <h3>Conclusion</h3>
+
+          <p>This project was a great exercise in working rapidly to take a concept to the simplest viable finished product.</p>
+          <p>Overall, the project went well, and I'm quite happy with it - I'd like to protoype this design in the future, which will be simple enough to do due to the steps I took with my components.</p>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- End of Main /-->
+
+    <footer id="contact">
+      <div class="container">
+        <ul class="socials">
+          <li><a href="https://www.deviantart.com/flyteck" class="social-link deviantart" target="_blank"><i class="fa-brands fa-deviantart"></i></a></li>
+          <li><a href="https://www.behance.net/zoeamaral" class="social-link behance" target="_blank"><i class="fa-brands fa-behance"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/zoe-renee-amaral/" class="social-link linkeden" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="https://x.com/flyteckk" class="social-link twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+        <p class="copyright">
+          Copyright Zoe Amaral 2024
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/project-js.js"></script>
+  </body>
+</html>

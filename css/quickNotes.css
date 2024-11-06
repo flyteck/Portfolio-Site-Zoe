@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+  background: #E7E2D8;
+}
+
+h3 {
+  font-family: "Inknut Antiqua", sans-serif;
+}
+
+h4 {
+  font-family: "Inknut Antiqua", sans-serif;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background: linear-gradient(90deg, #232446 0%, rgba(51,72,75,0) 100%);
+}
+
+a {
+  color:#A7B5E1;
+}
+
+a:hover, a:focus, a:active {
+  color: #91c9ff;
+}
+
+[class*="mockup-wrapper"] picture {
+    filter: drop-shadow(2px 2px 2px #1a1b35) drop-shadow(12px 12px 10px #1a1b35);
+}
+
+[class*="mockup-wrapper"] picture img {
+  border: none!important;
+}
+
+#quickNotes .container {
+  font-family: "Andada Pro", serif;
+}
+
+.container .area-header-link {
+  background: #ffffff;
+  padding: 20px calc(10px + 2.5vw);
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+#quickNotes .small-flex-wrapper img {
+  max-width: 100%;
+  max-height: none;
+}
+
+#typography-quickNotes li {
+  margin: 0;
+  display: flex;
+  align-items: center;
+} 
+
+#typography-quickNotes h1 {
+  font-family: "Inknut Antiqua", sans-serif;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+#typography-quickNotes {
+  font-family: "Andada Pro", sans-serif;
+}
+
+.swatch {
+  border-color:#E2E6F2;
+}
