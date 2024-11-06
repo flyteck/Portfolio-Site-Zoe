@@ -721,6 +721,11 @@ body.project-page #navigation {
 
   #home .button {
     padding: 10px 20px 8px;
+    transition: 200ms ease, margin 100ms ease;
+  }
+
+  #home .button:hover, #home.button:focus {
+    margin: 8px 0 2px;
   }
 
   main {
